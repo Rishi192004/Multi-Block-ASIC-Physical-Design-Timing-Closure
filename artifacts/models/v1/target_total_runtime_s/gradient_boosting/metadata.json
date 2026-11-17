@@ -1,0 +1,494 @@
+{
+  "model_name": "gradient_boosting",
+  "target_name": "target_total_runtime_s",
+  "version": "v1",
+  "feature_names": [
+    "is_success",
+    "rtl_num_modules",
+    "rtl_num_ports",
+    "rtl_num_inputs",
+    "rtl_num_outputs",
+    "rtl_num_registers",
+    "rtl_num_wires",
+    "rtl_num_always_blocks",
+    "rtl_num_comb_assignments",
+    "rtl_source_bytes",
+    "rtl_source_lines",
+    "rtl_code_lines",
+    "netlist_total_cells",
+    "netlist_sequential_cells",
+    "netlist_combinational_cells",
+    "netlist_ff_count",
+    "netlist_latch_count",
+    "netlist_buffer_count",
+    "netlist_inverter_count",
+    "gate_count_nand",
+    "gate_count_nor",
+    "gate_count_and",
+    "gate_count_or",
+    "gate_count_xor",
+    "gate_count_xnor",
+    "gate_count_mux",
+    "gate_count_aoi",
+    "gate_count_oai",
+    "netlist_estimated_logic_depth",
+    "net_fanout_mean",
+    "net_fanout_max",
+    "net_fanout_std",
+    "total_nets",
+    "pd_target_utilization",
+    "pd_core_aspect_ratio",
+    "pd_core_space_um",
+    "pd_clock_period_ns",
+    "pd_clock_uncertainty_ns",
+    "pd_clock_transition_ns",
+    "pd_num_routing_layers",
+    "pd_is_sky130",
+    "feat_seq_ratio",
+    "feat_comb_ratio",
+    "feat_ff_ratio",
+    "feat_clock_freq_mhz",
+    "feat_fanout_intensity",
+    "feat_depth_per_cell",
+    "feat_density_proxy",
+    "feat_cells_per_rtl_line",
+    "log_rtl_source_bytes",
+    "log_rtl_source_lines",
+    "log_rtl_code_lines",
+    "log_netlist_total_cells",
+    "log_netlist_combinational_cells",
+    "log_netlist_sequential_cells",
+    "log_gate_count_nand",
+    "log_gate_count_nor",
+    "log_gate_count_and",
+    "log_gate_count_or",
+    "log_gate_count_mux",
+    "log_gate_count_aoi",
+    "log_gate_count_oai",
+    "log_total_nets",
+    "log_target_cell_area_um2"
+  ],
+  "training_metrics": {
+    "r2": 0.9327,
+    "mae": 0.3036,
+    "rmse": 0.4559,
+    "mape": 14.68,
+    "max_error": 1.2946,
+    "bias": 0.0
+  },
+  "cv_metrics": {
+    "r2": 0.1863,
+    "mae": 0.7749,
+    "rmse": 1.5853,
+    "mape": 27.27,
+    "max_error": 7.259,
+    "bias": -0.4574
+  },
+  "test_metrics": {
+    "r2": 0.7961,
+    "mae": 0.2583,
+    "rmse": 0.3153,
+    "mape": 20.88,
+    "max_error": 0.5645,
+    "bias": 0.0325
+  },
+  "feature_bounds": {
+    "is_success": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.6857142857142857,
+      "std": 0.47100821595360554
+    },
+    "rtl_num_modules": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "rtl_num_ports": {
+      "min": 7.0,
+      "max": 11.0,
+      "mean": 7.714285714285714,
+      "std": 1.4052721857228891
+    },
+    "rtl_num_inputs": {
+      "min": 3.0,
+      "max": 5.0,
+      "mean": 4.057142857142857,
+      "std": 0.7252933338781401
+    },
+    "rtl_num_outputs": {
+      "min": 3.0,
+      "max": 6.0,
+      "mean": 3.657142857142857,
+      "std": 1.0555973258234952
+    },
+    "rtl_num_registers": {
+      "min": 1.0,
+      "max": 9.0,
+      "mean": 5.628571428571429,
+      "std": 2.776855122210718
+    },
+    "rtl_num_wires": {
+      "min": 4.0,
+      "max": 9.0,
+      "mean": 6.057142857142857,
+      "std": 2.0996198135244715
+    },
+    "rtl_num_always_blocks": {
+      "min": 1.0,
+      "max": 3.0,
+      "mean": 1.2857142857142858,
+      "std": 0.7100716024967263
+    },
+    "rtl_num_comb_assignments": {
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 2.0,
+      "std": 2.1693045781865616
+    },
+    "rtl_source_bytes": {
+      "min": 2030.0,
+      "max": 3154.0,
+      "mean": 2764.2285714285713,
+      "std": 513.8378140616588
+    },
+    "rtl_source_lines": {
+      "min": 57.0,
+      "max": 98.0,
+      "mean": 84.34285714285714,
+      "std": 17.472571542349485
+    },
+    "rtl_code_lines": {
+      "min": 46.0,
+      "max": 86.0,
+      "mean": 72.42857142857143,
+      "std": 17.028152665315087
+    },
+    "netlist_total_cells": {
+      "min": 0.0,
+      "max": 1107.0,
+      "mean": 239.25714285714287,
+      "std": 375.98305209435284
+    },
+    "netlist_sequential_cells": {
+      "min": 0.0,
+      "max": 285.0,
+      "mean": 33.142857142857146,
+      "std": 67.3966061534882
+    },
+    "netlist_combinational_cells": {
+      "min": 0.0,
+      "max": 1107.0,
+      "mean": 206.11428571428573,
+      "std": 357.34171908927834
+    },
+    "netlist_ff_count": {
+      "min": 0.0,
+      "max": 285.0,
+      "mean": 33.142857142857146,
+      "std": 67.3966061534882
+    },
+    "netlist_latch_count": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "netlist_buffer_count": {
+      "min": 0.0,
+      "max": 33.0,
+      "mean": 4.8,
+      "std": 10.445376123095864
+    },
+    "netlist_inverter_count": {
+      "min": 0.0,
+      "max": 24.0,
+      "mean": 4.8,
+      "std": 8.256191972232292
+    },
+    "gate_count_nand": {
+      "min": 0.0,
+      "max": 202.0,
+      "mean": 39.94285714285714,
+      "std": 73.7391837959355
+    },
+    "gate_count_nor": {
+      "min": 0.0,
+      "max": 206.0,
+      "mean": 33.885714285714286,
+      "std": 65.14994985713001
+    },
+    "gate_count_and": {
+      "min": 0.0,
+      "max": 31.0,
+      "mean": 8.971428571428572,
+      "std": 10.216727098491083
+    },
+    "gate_count_or": {
+      "min": 0.0,
+      "max": 14.0,
+      "mean": 1.6571428571428573,
+      "std": 4.504526201779829
+    },
+    "gate_count_xor": {
+      "min": 0.0,
+      "max": 25.0,
+      "mean": 3.8285714285714287,
+      "std": 8.045772416711314
+    },
+    "gate_count_xnor": {
+      "min": 0.0,
+      "max": 0.0,
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "gate_count_mux": {
+      "min": 0.0,
+      "max": 325.0,
+      "mean": 32.51428571428571,
+      "std": 78.09962394598453
+    },
+    "gate_count_aoi": {
+      "min": 0.0,
+      "max": 150.0,
+      "mean": 22.514285714285716,
+      "std": 47.2897025406859
+    },
+    "gate_count_oai": {
+      "min": 0.0,
+      "max": 161.0,
+      "mean": 25.37142857142857,
+      "std": 50.915781509495545
+    },
+    "netlist_estimated_logic_depth": {
+      "min": 0.0,
+      "max": 28.0,
+      "mean": 6.0,
+      "std": 8.774964387392123
+    },
+    "net_fanout_mean": {
+      "min": 0.0,
+      "max": 2.59,
+      "mean": 1.4415428571428572,
+      "std": 1.267296133804685
+    },
+    "net_fanout_max": {
+      "min": 0.0,
+      "max": 285.0,
+      "mean": 43.77142857142857,
+      "std": 68.68987668982867
+    },
+    "net_fanout_std": {
+      "min": 0.0,
+      "max": 11.043,
+      "mean": 3.0792571428571427,
+      "std": 3.099459510214996
+    },
+    "total_nets": {
+      "min": 0.0,
+      "max": 1169.0,
+      "mean": 252.22857142857143,
+      "std": 393.24600036964483
+    },
+    "pd_target_utilization": {
+      "min": 0.4,
+      "max": 0.5,
+      "mean": 0.4485714285714286,
+      "std": 0.05070925528371099
+    },
+    "pd_core_aspect_ratio": {
+      "min": 1.0,
+      "max": 1.0,
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "pd_core_space_um": {
+      "min": 10.0,
+      "max": 10.0,
+      "mean": 10.0,
+      "std": 0.0
+    },
+    "pd_clock_period_ns": {
+      "min": 5.0,
+      "max": 12.0,
+      "mean": 8.17142857142857,
+      "std": 2.490992175179746
+    },
+    "pd_clock_uncertainty_ns": {
+      "min": 0.25,
+      "max": 0.25,
+      "mean": 0.25,
+      "std": 0.0
+    },
+    "pd_clock_transition_ns": {
+      "min": 0.15,
+      "max": 0.15,
+      "mean": 0.15000000000000002,
+      "std": 2.816078793465528e-17
+    },
+    "pd_num_routing_layers": {
+      "min": 0.0,
+      "max": 6.0,
+      "mean": 3.942857142857143,
+      "std": 2.8895639518676126
+    },
+    "pd_is_sky130": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.6571428571428571,
+      "std": 0.48159399197793534
+    },
+    "feat_seq_ratio": {
+      "min": 0.0,
+      "max": 0.36213468869123255,
+      "mean": 0.13409018751269847,
+      "std": 0.15180635686596863
+    },
+    "feat_comb_ratio": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.4373383839158728,
+      "std": 0.3960191144204006
+    },
+    "feat_ff_ratio": {
+      "min": 0.0,
+      "max": 0.36213468869123255,
+      "mean": 0.13409018751269847,
+      "std": 0.15180635686596863
+    },
+    "feat_clock_freq_mhz": {
+      "min": 83.33333333333333,
+      "max": 200.0,
+      "mean": 135.0,
+      "std": 43.761086363784
+    },
+    "feat_fanout_intensity": {
+      "min": 0.0,
+      "max": 14.247443371455208,
+      "mean": 5.85164830597111,
+      "std": 5.314021390306393
+    },
+    "feat_depth_per_cell": {
+      "min": 0.0,
+      "max": 3.9941161720035203,
+      "mean": 0.9896237905255085,
+      "std": 1.2617014009004601
+    },
+    "feat_density_proxy": {
+      "min": 2.0,
+      "max": 2767.5,
+      "mean": 595.7714285714286,
+      "std": 940.609723584038
+    },
+    "feat_cells_per_rtl_line": {
+      "min": 0.01020408163265306,
+      "max": 19.42105263157895,
+      "mean": 3.5538669821898785,
+      "std": 6.370851558369291
+    },
+    "log_rtl_source_bytes": {
+      "min": 7.616283561580385,
+      "max": 8.056743774975313,
+      "mean": 7.906455965313723,
+      "std": 0.1991308145486679
+    },
+    "log_rtl_source_lines": {
+      "min": 4.060443010546419,
+      "max": 4.59511985013459,
+      "mean": 4.423493234297258,
+      "std": 0.22548509669450487
+    },
+    "log_rtl_code_lines": {
+      "min": 3.8501476017100584,
+      "max": 4.465908118654584,
+      "mean": 4.265988125371321,
+      "std": 0.25908045568309696
+    },
+    "log_netlist_total_cells": {
+      "min": 0.0,
+      "max": 7.010311867307229,
+      "mean": 3.162272030365133,
+      "std": 2.882040081806511
+    },
+    "log_netlist_combinational_cells": {
+      "min": 0.0,
+      "max": 7.010311867307229,
+      "mean": 3.0039345797304136,
+      "std": 2.772886221066897
+    },
+    "log_netlist_sequential_cells": {
+      "min": 0.0,
+      "max": 5.655991810819852,
+      "mean": 1.800563928960307,
+      "std": 2.0514597563089
+    },
+    "log_gate_count_nand": {
+      "min": 0.0,
+      "max": 5.313205979041787,
+      "mean": 2.0049720173100916,
+      "std": 1.9783104431217118
+    },
+    "log_gate_count_nor": {
+      "min": 0.0,
+      "max": 5.332718793265369,
+      "mean": 1.926114071897974,
+      "std": 1.910934250653812
+    },
+    "log_gate_count_and": {
+      "min": 0.0,
+      "max": 3.4657359027997265,
+      "mean": 1.5189125939357069,
+      "std": 1.4175069753340288
+    },
+    "log_gate_count_or": {
+      "min": 0.0,
+      "max": 2.70805020110221,
+      "mean": 0.34909986187224945,
+      "std": 0.8749718419002452
+    },
+    "log_gate_count_mux": {
+      "min": 0.0,
+      "max": 5.786897381366708,
+      "mean": 1.6969118069002995,
+      "std": 1.8886955097114213
+    },
+    "log_gate_count_aoi": {
+      "min": 0.0,
+      "max": 5.017279836814924,
+      "mean": 1.6526505031814303,
+      "std": 1.7048891367506107
+    },
+    "log_gate_count_oai": {
+      "min": 0.0,
+      "max": 5.087596335232384,
+      "mean": 1.718799203082994,
+      "std": 1.7755402396132176
+    },
+    "log_total_nets": {
+      "min": 0.0,
+      "max": 7.064759027791802,
+      "mean": 3.2040544339946586,
+      "std": 2.912871659437403
+    },
+    "log_target_cell_area_um2": {
+      "min": 0.0,
+      "max": 8.812248018197431,
+      "mean": 4.265799526222361,
+      "std": 3.8006553052931067
+    }
+  },
+  "trained_at": "2026-11-17T19:50:44.376575+00:00",
+  "train_designs": [
+    "alu",
+    "booth_multiplier",
+    "fifo_sync",
+    "uart_tx"
+  ],
+  "test_designs": [
+    "fsm_traffic"
+  ],
+  "hyperparameters": {
+    "n_features": 64
+  }
+}

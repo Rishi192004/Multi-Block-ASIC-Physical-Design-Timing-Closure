@@ -1,0 +1,1082 @@
+{
+  "target_synthesis_runtime_s": {
+    "target": "target_synthesis_runtime_s",
+    "best_model": "random_forest",
+    "models": {
+      "linear_regression": {
+        "train_metrics": {
+          "r2": 0.8267,
+          "mae": 0.3714,
+          "rmse": 0.5941,
+          "mape": 2972.33,
+          "max_error": 2.2826,
+          "bias": -0.0
+        },
+        "cv_metrics": {
+          "r2": -19.6989,
+          "mae": 4.2809,
+          "rmse": 6.4933,
+          "mape": 5750.99,
+          "max_error": 21.4258,
+          "bias": -1.8698
+        },
+        "test_metrics": {
+          "r2": -249.038,
+          "mae": 5.8801,
+          "rmse": 5.8887,
+          "mape": 644.72,
+          "max_error": 6.3243,
+          "bias": 5.8801
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": -249.038,
+            "mae": 5.8801,
+            "rmse": 5.8887,
+            "mape": 644.72,
+            "max_error": 6.3243,
+            "bias": 5.8801
+          }
+        }
+      },
+      "random_forest": {
+        "train_metrics": {
+          "r2": 0.9077,
+          "mae": 0.2701,
+          "rmse": 0.4335,
+          "mape": 2286.87,
+          "max_error": 1.6163,
+          "bias": 0.0084
+        },
+        "cv_metrics": {
+          "r2": 0.0922,
+          "mae": 0.6055,
+          "rmse": 1.3599,
+          "mape": 3934.57,
+          "max_error": 6.3809,
+          "bias": -0.3816
+        },
+        "test_metrics": {
+          "r2": 0.67,
+          "mae": 0.1655,
+          "rmse": 0.2139,
+          "mape": 17.92,
+          "max_error": 0.4085,
+          "bias": -0.0073
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.67,
+            "mae": 0.1655,
+            "rmse": 0.2139,
+            "mape": 17.92,
+            "max_error": 0.4085,
+            "bias": -0.0073
+          }
+        }
+      },
+      "gradient_boosting": {
+        "train_metrics": {
+          "r2": 0.9269,
+          "mae": 0.2226,
+          "rmse": 0.3858,
+          "mape": 195.09,
+          "max_error": 1.2296,
+          "bias": -0.0
+        },
+        "cv_metrics": {
+          "r2": 0.0618,
+          "mae": 0.6644,
+          "rmse": 1.3824,
+          "mape": 4036.32,
+          "max_error": 6.3846,
+          "bias": -0.4977
+        },
+        "test_metrics": {
+          "r2": 0.6592,
+          "mae": 0.1722,
+          "rmse": 0.2174,
+          "mape": 18.72,
+          "max_error": 0.3989,
+          "bias": 0.0126
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.6592,
+            "mae": 0.1722,
+            "rmse": 0.2174,
+            "mape": 18.72,
+            "max_error": 0.3989,
+            "bias": 0.0126
+          }
+        }
+      },
+      "xgboost": {
+        "train_metrics": {
+          "r2": 0.9256,
+          "mae": 0.2279,
+          "rmse": 0.3894,
+          "mape": 544.37,
+          "max_error": 1.3729,
+          "bias": -0.0037
+        },
+        "cv_metrics": {
+          "r2": 0.0043,
+          "mae": 0.763,
+          "rmse": 1.4241,
+          "mape": 4396.21,
+          "max_error": 6.3713,
+          "bias": -0.4445
+        },
+        "test_metrics": {
+          "r2": 0.4595,
+          "mae": 0.2651,
+          "rmse": 0.2738,
+          "mape": 29.75,
+          "max_error": 0.3612,
+          "bias": -0.0305
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.4595,
+            "mae": 0.2651,
+            "rmse": 0.2738,
+            "mape": 29.75,
+            "max_error": 0.3612,
+            "bias": -0.0305
+          }
+        }
+      }
+    },
+    "feature_cols": [
+      "is_success",
+      "rtl_num_modules",
+      "rtl_num_ports",
+      "rtl_num_inputs",
+      "rtl_num_outputs",
+      "rtl_num_registers",
+      "rtl_num_wires",
+      "rtl_num_always_blocks",
+      "rtl_num_comb_assignments",
+      "rtl_source_bytes",
+      "rtl_source_lines",
+      "rtl_code_lines",
+      "netlist_total_cells",
+      "netlist_sequential_cells",
+      "netlist_combinational_cells",
+      "netlist_ff_count",
+      "netlist_latch_count",
+      "netlist_buffer_count",
+      "netlist_inverter_count",
+      "gate_count_nand",
+      "gate_count_nor",
+      "gate_count_and",
+      "gate_count_or",
+      "gate_count_xor",
+      "gate_count_xnor",
+      "gate_count_mux",
+      "gate_count_aoi",
+      "gate_count_oai",
+      "netlist_estimated_logic_depth",
+      "net_fanout_mean",
+      "net_fanout_max",
+      "net_fanout_std",
+      "total_nets",
+      "pd_target_utilization",
+      "pd_core_aspect_ratio",
+      "pd_core_space_um",
+      "pd_clock_period_ns",
+      "pd_clock_uncertainty_ns",
+      "pd_clock_transition_ns",
+      "pd_num_routing_layers",
+      "pd_is_sky130",
+      "feat_seq_ratio",
+      "feat_comb_ratio",
+      "feat_ff_ratio",
+      "feat_clock_freq_mhz",
+      "feat_fanout_intensity",
+      "feat_depth_per_cell",
+      "feat_density_proxy",
+      "feat_cells_per_rtl_line",
+      "log_rtl_source_bytes",
+      "log_rtl_source_lines",
+      "log_rtl_code_lines",
+      "log_netlist_total_cells",
+      "log_netlist_combinational_cells",
+      "log_netlist_sequential_cells",
+      "log_gate_count_nand",
+      "log_gate_count_nor",
+      "log_gate_count_and",
+      "log_gate_count_or",
+      "log_gate_count_mux",
+      "log_gate_count_aoi",
+      "log_gate_count_oai",
+      "log_total_nets",
+      "log_target_cell_area_um2"
+    ]
+  },
+  "target_placement_runtime_s": {
+    "target": "target_placement_runtime_s",
+    "best_model": "xgboost",
+    "models": {
+      "linear_regression": {
+        "train_metrics": {
+          "r2": 0.9024,
+          "mae": 0.079,
+          "rmse": 0.1601,
+          "mape": 2700.03,
+          "max_error": 0.4881,
+          "bias": -0.0
+        },
+        "cv_metrics": {
+          "r2": -33.3526,
+          "mae": 1.8886,
+          "rmse": 3.005,
+          "mape": 137582.02,
+          "max_error": 10.4361,
+          "bias": -0.8871
+        },
+        "test_metrics": {
+          "r2": 0.0,
+          "mae": 0.3525,
+          "rmse": 0.3983,
+          "mape": 35250.56,
+          "max_error": 0.5038,
+          "bias": 0.3525
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0,
+            "mae": 0.3525,
+            "rmse": 0.3983,
+            "mape": 35250.56,
+            "max_error": 0.5038,
+            "bias": 0.3525
+          }
+        }
+      },
+      "random_forest": {
+        "train_metrics": {
+          "r2": 0.9577,
+          "mae": 0.069,
+          "rmse": 0.1054,
+          "mape": 2867.34,
+          "max_error": 0.2833,
+          "bias": 0.0141
+        },
+        "cv_metrics": {
+          "r2": -0.1549,
+          "mae": 0.3562,
+          "rmse": 0.551,
+          "mape": 8845.81,
+          "max_error": 1.275,
+          "bias": -0.1798
+        },
+        "test_metrics": {
+          "r2": 0.0,
+          "mae": 0.0426,
+          "rmse": 0.0595,
+          "mape": 4257.33,
+          "max_error": 0.0935,
+          "bias": 0.0426
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0,
+            "mae": 0.0426,
+            "rmse": 0.0595,
+            "mape": 4257.33,
+            "max_error": 0.0935,
+            "bias": 0.0426
+          }
+        }
+      },
+      "gradient_boosting": {
+        "train_metrics": {
+          "r2": 0.9829,
+          "mae": 0.032,
+          "rmse": 0.0671,
+          "mape": 129.56,
+          "max_error": 0.2122,
+          "bias": -0.0
+        },
+        "cv_metrics": {
+          "r2": -0.2733,
+          "mae": 0.3796,
+          "rmse": 0.5785,
+          "mape": 11387.69,
+          "max_error": 1.2449,
+          "bias": -0.1524
+        },
+        "test_metrics": {
+          "r2": 0.0,
+          "mae": 0.025,
+          "rmse": 0.0379,
+          "mape": 2499.59,
+          "max_error": 0.0598,
+          "bias": 0.025
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0,
+            "mae": 0.025,
+            "rmse": 0.0379,
+            "mape": 2499.59,
+            "max_error": 0.0598,
+            "bias": 0.025
+          }
+        }
+      },
+      "xgboost": {
+        "train_metrics": {
+          "r2": 0.9823,
+          "mae": 0.0329,
+          "rmse": 0.0681,
+          "mape": 220.39,
+          "max_error": 0.2149,
+          "bias": -0.002
+        },
+        "cv_metrics": {
+          "r2": 0.0248,
+          "mae": 0.3274,
+          "rmse": 0.5063,
+          "mape": 7873.0,
+          "max_error": 1.0754,
+          "bias": -0.1704
+        },
+        "test_metrics": {
+          "r2": 0.0,
+          "mae": 0.0035,
+          "rmse": 0.0041,
+          "mape": 345.6,
+          "max_error": 0.0061,
+          "bias": 0.0035
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0,
+            "mae": 0.0035,
+            "rmse": 0.0041,
+            "mape": 345.6,
+            "max_error": 0.0061,
+            "bias": 0.0035
+          }
+        }
+      }
+    },
+    "feature_cols": [
+      "is_success",
+      "rtl_num_modules",
+      "rtl_num_ports",
+      "rtl_num_inputs",
+      "rtl_num_outputs",
+      "rtl_num_registers",
+      "rtl_num_wires",
+      "rtl_num_always_blocks",
+      "rtl_num_comb_assignments",
+      "rtl_source_bytes",
+      "rtl_source_lines",
+      "rtl_code_lines",
+      "netlist_total_cells",
+      "netlist_sequential_cells",
+      "netlist_combinational_cells",
+      "netlist_ff_count",
+      "netlist_latch_count",
+      "netlist_buffer_count",
+      "netlist_inverter_count",
+      "gate_count_nand",
+      "gate_count_nor",
+      "gate_count_and",
+      "gate_count_or",
+      "gate_count_xor",
+      "gate_count_xnor",
+      "gate_count_mux",
+      "gate_count_aoi",
+      "gate_count_oai",
+      "netlist_estimated_logic_depth",
+      "net_fanout_mean",
+      "net_fanout_max",
+      "net_fanout_std",
+      "total_nets",
+      "pd_target_utilization",
+      "pd_core_aspect_ratio",
+      "pd_core_space_um",
+      "pd_clock_period_ns",
+      "pd_clock_uncertainty_ns",
+      "pd_clock_transition_ns",
+      "pd_num_routing_layers",
+      "pd_is_sky130",
+      "feat_seq_ratio",
+      "feat_comb_ratio",
+      "feat_ff_ratio",
+      "feat_clock_freq_mhz",
+      "feat_fanout_intensity",
+      "feat_depth_per_cell",
+      "feat_density_proxy",
+      "feat_cells_per_rtl_line",
+      "log_rtl_source_bytes",
+      "log_rtl_source_lines",
+      "log_rtl_code_lines",
+      "log_netlist_total_cells",
+      "log_netlist_combinational_cells",
+      "log_netlist_sequential_cells",
+      "log_gate_count_nand",
+      "log_gate_count_nor",
+      "log_gate_count_and",
+      "log_gate_count_or",
+      "log_gate_count_mux",
+      "log_gate_count_aoi",
+      "log_gate_count_oai",
+      "log_total_nets",
+      "log_target_cell_area_um2"
+    ]
+  },
+  "target_total_runtime_s": {
+    "target": "target_total_runtime_s",
+    "best_model": "gradient_boosting",
+    "models": {
+      "linear_regression": {
+        "train_metrics": {
+          "r2": 0.8638,
+          "mae": 0.4049,
+          "rmse": 0.6485,
+          "mape": 18.08,
+          "max_error": 2.5381,
+          "bias": -0.0
+        },
+        "cv_metrics": {
+          "r2": -28.1698,
+          "mae": 5.9327,
+          "rmse": 9.4915,
+          "mape": 272.54,
+          "max_error": 32.9534,
+          "bias": -2.1696
+        },
+        "test_metrics": {
+          "r2": -64.9898,
+          "mae": 5.6524,
+          "rmse": 5.6735,
+          "mape": 509.93,
+          "max_error": 6.2365,
+          "bias": 5.6524
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": -64.9898,
+            "mae": 5.6524,
+            "rmse": 5.6735,
+            "mape": 509.93,
+            "max_error": 6.2365,
+            "bias": 5.6524
+          }
+        }
+      },
+      "random_forest": {
+        "train_metrics": {
+          "r2": 0.9218,
+          "mae": 0.3333,
+          "rmse": 0.4913,
+          "mape": 15.27,
+          "max_error": 1.7637,
+          "bias": -0.0037
+        },
+        "cv_metrics": {
+          "r2": 0.1629,
+          "mae": 0.7859,
+          "rmse": 1.6078,
+          "mape": 25.37,
+          "max_error": 7.3489,
+          "bias": -0.5241
+        },
+        "test_metrics": {
+          "r2": 0.8105,
+          "mae": 0.2476,
+          "rmse": 0.3041,
+          "mape": 20.75,
+          "max_error": 0.5432,
+          "bias": -0.0898
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.8105,
+            "mae": 0.2476,
+            "rmse": 0.3041,
+            "mape": 20.75,
+            "max_error": 0.5432,
+            "bias": -0.0898
+          }
+        }
+      },
+      "gradient_boosting": {
+        "train_metrics": {
+          "r2": 0.9327,
+          "mae": 0.3036,
+          "rmse": 0.4559,
+          "mape": 14.68,
+          "max_error": 1.2946,
+          "bias": 0.0
+        },
+        "cv_metrics": {
+          "r2": 0.1863,
+          "mae": 0.7749,
+          "rmse": 1.5853,
+          "mape": 27.27,
+          "max_error": 7.259,
+          "bias": -0.4574
+        },
+        "test_metrics": {
+          "r2": 0.7961,
+          "mae": 0.2583,
+          "rmse": 0.3153,
+          "mape": 20.88,
+          "max_error": 0.5645,
+          "bias": 0.0325
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.7961,
+            "mae": 0.2583,
+            "rmse": 0.3153,
+            "mape": 20.88,
+            "max_error": 0.5645,
+            "bias": 0.0325
+          }
+        }
+      },
+      "xgboost": {
+        "train_metrics": {
+          "r2": 0.9318,
+          "mae": 0.3057,
+          "rmse": 0.4588,
+          "mape": 14.87,
+          "max_error": 1.4664,
+          "bias": -0.0099
+        },
+        "cv_metrics": {
+          "r2": 0.0929,
+          "mae": 0.922,
+          "rmse": 1.6737,
+          "mape": 32.82,
+          "max_error": 7.4052,
+          "bias": -0.6755
+        },
+        "test_metrics": {
+          "r2": 0.6094,
+          "mae": 0.3587,
+          "rmse": 0.4365,
+          "mape": 40.39,
+          "max_error": 0.6496,
+          "bias": 0.3174
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.6094,
+            "mae": 0.3587,
+            "rmse": 0.4365,
+            "mape": 40.39,
+            "max_error": 0.6496,
+            "bias": 0.3174
+          }
+        }
+      }
+    },
+    "feature_cols": [
+      "is_success",
+      "rtl_num_modules",
+      "rtl_num_ports",
+      "rtl_num_inputs",
+      "rtl_num_outputs",
+      "rtl_num_registers",
+      "rtl_num_wires",
+      "rtl_num_always_blocks",
+      "rtl_num_comb_assignments",
+      "rtl_source_bytes",
+      "rtl_source_lines",
+      "rtl_code_lines",
+      "netlist_total_cells",
+      "netlist_sequential_cells",
+      "netlist_combinational_cells",
+      "netlist_ff_count",
+      "netlist_latch_count",
+      "netlist_buffer_count",
+      "netlist_inverter_count",
+      "gate_count_nand",
+      "gate_count_nor",
+      "gate_count_and",
+      "gate_count_or",
+      "gate_count_xor",
+      "gate_count_xnor",
+      "gate_count_mux",
+      "gate_count_aoi",
+      "gate_count_oai",
+      "netlist_estimated_logic_depth",
+      "net_fanout_mean",
+      "net_fanout_max",
+      "net_fanout_std",
+      "total_nets",
+      "pd_target_utilization",
+      "pd_core_aspect_ratio",
+      "pd_core_space_um",
+      "pd_clock_period_ns",
+      "pd_clock_uncertainty_ns",
+      "pd_clock_transition_ns",
+      "pd_num_routing_layers",
+      "pd_is_sky130",
+      "feat_seq_ratio",
+      "feat_comb_ratio",
+      "feat_ff_ratio",
+      "feat_clock_freq_mhz",
+      "feat_fanout_intensity",
+      "feat_depth_per_cell",
+      "feat_density_proxy",
+      "feat_cells_per_rtl_line",
+      "log_rtl_source_bytes",
+      "log_rtl_source_lines",
+      "log_rtl_code_lines",
+      "log_netlist_total_cells",
+      "log_netlist_combinational_cells",
+      "log_netlist_sequential_cells",
+      "log_gate_count_nand",
+      "log_gate_count_nor",
+      "log_gate_count_and",
+      "log_gate_count_or",
+      "log_gate_count_mux",
+      "log_gate_count_aoi",
+      "log_gate_count_oai",
+      "log_total_nets",
+      "log_target_cell_area_um2"
+    ]
+  },
+  "target_cell_area_um2": {
+    "target": "target_cell_area_um2",
+    "best_model": "gradient_boosting",
+    "models": {
+      "linear_regression": {
+        "train_metrics": {
+          "r2": 0.9942,
+          "mae": 51.2396,
+          "rmse": 143.8014,
+          "mape": 183559.12,
+          "max_error": 425.2279,
+          "bias": 0.0
+        },
+        "cv_metrics": {
+          "r2": -1.5094,
+          "mae": 1871.5318,
+          "rmse": 2999.1622,
+          "mape": 28522138.45,
+          "max_error": 10443.9888,
+          "bias": -898.2523
+        },
+        "test_metrics": {
+          "r2": -1.9816,
+          "mae": 305.2299,
+          "rmse": 350.2133,
+          "mape": 26725802.91,
+          "max_error": 445.4299,
+          "bias": 305.2299
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": -1.9816,
+            "mae": 305.2299,
+            "rmse": 350.2133,
+            "mape": 26725802.91,
+            "max_error": 445.4299,
+            "bias": 305.2299
+          }
+        }
+      },
+      "random_forest": {
+        "train_metrics": {
+          "r2": 0.9971,
+          "mae": 49.8303,
+          "rmse": 101.7922,
+          "mape": 1.92,
+          "max_error": 288.825,
+          "bias": 1.1223
+        },
+        "cv_metrics": {
+          "r2": 0.5288,
+          "mae": 795.8216,
+          "rmse": 1299.5958,
+          "mape": 2430521.5,
+          "max_error": 4107.345,
+          "bias": -54.6001
+        },
+        "test_metrics": {
+          "r2": -0.9604,
+          "mae": 179.602,
+          "rmse": 283.9757,
+          "mape": 43.38,
+          "max_error": 449.005,
+          "bias": 179.602
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": -0.9604,
+            "mae": 179.602,
+            "rmse": 283.9757,
+            "mape": 43.38,
+            "max_error": 449.005,
+            "bias": 179.602
+          }
+        }
+      },
+      "gradient_boosting": {
+        "train_metrics": {
+          "r2": 1.0,
+          "mae": 8.1645,
+          "rmse": 11.2092,
+          "mape": 349446.75,
+          "max_error": 31.6026,
+          "bias": 0.0
+        },
+        "cv_metrics": {
+          "r2": 0.6427,
+          "mae": 651.5499,
+          "rmse": 1131.6462,
+          "mape": 370254.48,
+          "max_error": 3640.6394,
+          "bias": -80.5892
+        },
+        "test_metrics": {
+          "r2": 0.0293,
+          "mae": 131.2079,
+          "rmse": 199.8225,
+          "mape": 489255.68,
+          "max_error": 315.7892,
+          "bias": 131.2079
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0293,
+            "mae": 131.2079,
+            "rmse": 199.8225,
+            "mape": 489255.68,
+            "max_error": 315.7892,
+            "bias": 131.2079
+          }
+        }
+      },
+      "xgboost": {
+        "train_metrics": {
+          "r2": 0.9993,
+          "mae": 24.6232,
+          "rmse": 50.9224,
+          "mape": 519563.36,
+          "max_error": 191.77,
+          "bias": -12.5035
+        },
+        "cv_metrics": {
+          "r2": 0.3077,
+          "mae": 937.6517,
+          "rmse": 1575.2423,
+          "mape": 597496.53,
+          "max_error": 5074.5836,
+          "bias": -925.7026
+        },
+        "test_metrics": {
+          "r2": -0.5726,
+          "mae": 168.0246,
+          "rmse": 254.3427,
+          "mape": 727426.79,
+          "max_error": 401.8769,
+          "bias": -153.4769
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": -0.5726,
+            "mae": 168.0246,
+            "rmse": 254.3427,
+            "mape": 727426.79,
+            "max_error": 401.8769,
+            "bias": -153.4769
+          }
+        }
+      }
+    },
+    "feature_cols": [
+      "is_success",
+      "rtl_num_modules",
+      "rtl_num_ports",
+      "rtl_num_inputs",
+      "rtl_num_outputs",
+      "rtl_num_registers",
+      "rtl_num_wires",
+      "rtl_num_always_blocks",
+      "rtl_num_comb_assignments",
+      "rtl_source_bytes",
+      "rtl_source_lines",
+      "rtl_code_lines",
+      "netlist_total_cells",
+      "netlist_sequential_cells",
+      "netlist_combinational_cells",
+      "netlist_ff_count",
+      "netlist_latch_count",
+      "netlist_buffer_count",
+      "netlist_inverter_count",
+      "gate_count_nand",
+      "gate_count_nor",
+      "gate_count_and",
+      "gate_count_or",
+      "gate_count_xor",
+      "gate_count_xnor",
+      "gate_count_mux",
+      "gate_count_aoi",
+      "gate_count_oai",
+      "netlist_estimated_logic_depth",
+      "net_fanout_mean",
+      "net_fanout_max",
+      "net_fanout_std",
+      "total_nets",
+      "pd_target_utilization",
+      "pd_core_aspect_ratio",
+      "pd_core_space_um",
+      "pd_clock_period_ns",
+      "pd_clock_uncertainty_ns",
+      "pd_clock_transition_ns",
+      "pd_num_routing_layers",
+      "pd_is_sky130",
+      "feat_seq_ratio",
+      "feat_comb_ratio",
+      "feat_ff_ratio",
+      "feat_clock_freq_mhz",
+      "feat_fanout_intensity",
+      "feat_depth_per_cell",
+      "feat_density_proxy",
+      "feat_cells_per_rtl_line",
+      "log_rtl_source_bytes",
+      "log_rtl_source_lines",
+      "log_rtl_code_lines",
+      "log_netlist_total_cells",
+      "log_netlist_combinational_cells",
+      "log_netlist_sequential_cells",
+      "log_gate_count_nand",
+      "log_gate_count_nor",
+      "log_gate_count_and",
+      "log_gate_count_or",
+      "log_gate_count_mux",
+      "log_gate_count_aoi",
+      "log_gate_count_oai",
+      "log_total_nets",
+      "log_target_cell_area_um2"
+    ]
+  },
+  "target_wns_ns": {
+    "target": "target_wns_ns",
+    "best_model": "random_forest",
+    "models": {
+      "linear_regression": {
+        "train_metrics": {
+          "r2": 0.9837,
+          "mae": 0.1743,
+          "rmse": 0.3889,
+          "mape": 10092.08,
+          "max_error": 1.9141,
+          "bias": -0.0
+        },
+        "cv_metrics": {
+          "r2": -15.9052,
+          "mae": 10.4608,
+          "rmse": 12.5081,
+          "mape": 812642.7,
+          "max_error": 22.4647,
+          "bias": -0.5098
+        },
+        "test_metrics": {
+          "r2": 0.0,
+          "mae": 19.7497,
+          "rmse": 19.7669,
+          "mape": 1974972.97,
+          "max_error": 20.7585,
+          "bias": -19.7497
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0,
+            "mae": 19.7497,
+            "rmse": 19.7669,
+            "mape": 1974972.97,
+            "max_error": 20.7585,
+            "bias": -19.7497
+          }
+        }
+      },
+      "random_forest": {
+        "train_metrics": {
+          "r2": 0.9717,
+          "mae": 0.2644,
+          "rmse": 0.5116,
+          "mape": 22328.37,
+          "max_error": 1.4399,
+          "bias": 0.181
+        },
+        "cv_metrics": {
+          "r2": -1.0218,
+          "mae": 2.9477,
+          "rmse": 4.3257,
+          "mape": 113034.25,
+          "max_error": 7.1372,
+          "bias": -0.2798
+        },
+        "test_metrics": {
+          "r2": 0.0,
+          "mae": 0.4236,
+          "rmse": 0.6698,
+          "mape": 42360.0,
+          "max_error": 1.059,
+          "bias": 0.4236
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0,
+            "mae": 0.4236,
+            "rmse": 0.6698,
+            "mape": 42360.0,
+            "max_error": 1.059,
+            "bias": 0.4236
+          }
+        }
+      },
+      "gradient_boosting": {
+        "train_metrics": {
+          "r2": 0.9882,
+          "mae": 0.0928,
+          "rmse": 0.3304,
+          "mape": 4544.19,
+          "max_error": 1.3973,
+          "bias": -0.0
+        },
+        "cv_metrics": {
+          "r2": -1.3955,
+          "mae": 3.1739,
+          "rmse": 4.7085,
+          "mape": 131272.8,
+          "max_error": 8.6643,
+          "bias": -0.0544
+        },
+        "test_metrics": {
+          "r2": 0.0,
+          "mae": 0.875,
+          "rmse": 1.3748,
+          "mape": 87495.4,
+          "max_error": 2.1738,
+          "bias": 0.875
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0,
+            "mae": 0.875,
+            "rmse": 1.3748,
+            "mape": 87495.4,
+            "max_error": 2.1738,
+            "bias": 0.875
+          }
+        }
+      },
+      "xgboost": {
+        "train_metrics": {
+          "r2": 0.988,
+          "mae": 0.1056,
+          "rmse": 0.3327,
+          "mape": 4976.43,
+          "max_error": 1.4862,
+          "bias": 0.006
+        },
+        "cv_metrics": {
+          "r2": -1.3332,
+          "mae": 3.0643,
+          "rmse": 4.6468,
+          "mape": 117154.95,
+          "max_error": 9.7673,
+          "bias": -0.1643
+        },
+        "test_metrics": {
+          "r2": 0.0,
+          "mae": 0.0673,
+          "rmse": 0.0839,
+          "mape": 6728.09,
+          "max_error": 0.1286,
+          "bias": 0.0356
+        },
+        "design_test_errors": {
+          "fsm_traffic": {
+            "r2": 0.0,
+            "mae": 0.0673,
+            "rmse": 0.0839,
+            "mape": 6728.09,
+            "max_error": 0.1286,
+            "bias": 0.0356
+          }
+        }
+      }
+    },
+    "feature_cols": [
+      "is_success",
+      "rtl_num_modules",
+      "rtl_num_ports",
+      "rtl_num_inputs",
+      "rtl_num_outputs",
+      "rtl_num_registers",
+      "rtl_num_wires",
+      "rtl_num_always_blocks",
+      "rtl_num_comb_assignments",
+      "rtl_source_bytes",
+      "rtl_source_lines",
+      "rtl_code_lines",
+      "netlist_total_cells",
+      "netlist_sequential_cells",
+      "netlist_combinational_cells",
+      "netlist_ff_count",
+      "netlist_latch_count",
+      "netlist_buffer_count",
+      "netlist_inverter_count",
+      "gate_count_nand",
+      "gate_count_nor",
+      "gate_count_and",
+      "gate_count_or",
+      "gate_count_xor",
+      "gate_count_xnor",
+      "gate_count_mux",
+      "gate_count_aoi",
+      "gate_count_oai",
+      "netlist_estimated_logic_depth",
+      "net_fanout_mean",
+      "net_fanout_max",
+      "net_fanout_std",
+      "total_nets",
+      "pd_target_utilization",
+      "pd_core_aspect_ratio",
+      "pd_core_space_um",
+      "pd_clock_period_ns",
+      "pd_clock_uncertainty_ns",
+      "pd_clock_transition_ns",
+      "pd_num_routing_layers",
+      "pd_is_sky130",
+      "feat_seq_ratio",
+      "feat_comb_ratio",
+      "feat_ff_ratio",
+      "feat_clock_freq_mhz",
+      "feat_fanout_intensity",
+      "feat_depth_per_cell",
+      "feat_density_proxy",
+      "feat_cells_per_rtl_line",
+      "log_rtl_source_bytes",
+      "log_rtl_source_lines",
+      "log_rtl_code_lines",
+      "log_netlist_total_cells",
+      "log_netlist_combinational_cells",
+      "log_netlist_sequential_cells",
+      "log_gate_count_nand",
+      "log_gate_count_nor",
+      "log_gate_count_and",
+      "log_gate_count_or",
+      "log_gate_count_mux",
+      "log_gate_count_aoi",
+      "log_gate_count_oai",
+      "log_total_nets",
+      "log_target_cell_area_um2"
+    ]
+  }
+}

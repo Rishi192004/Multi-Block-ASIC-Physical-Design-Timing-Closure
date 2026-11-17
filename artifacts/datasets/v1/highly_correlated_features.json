@@ -1,0 +1,1357 @@
+[
+  {
+    "feature_1": "netlist_sequential_cells",
+    "feature_2": "netlist_ff_count",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "pd_num_routing_layers",
+    "feature_2": "pd_is_sky130",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "is_missing_timing",
+    "feature_2": "is_missing_power",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "feat_seq_ratio",
+    "feature_2": "feat_ff_ratio",
+    "correlation": 1.0
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.9999
+  },
+  {
+    "feature_1": "rtl_source_lines",
+    "feature_2": "rtl_code_lines",
+    "correlation": 0.9998
+  },
+  {
+    "feature_1": "log_rtl_source_lines",
+    "feature_2": "log_rtl_code_lines",
+    "correlation": 0.9998
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9998
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "total_nets",
+    "correlation": 0.9996
+  },
+  {
+    "feature_1": "total_nets",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.9995
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_netlist_combinational_cells",
+    "correlation": 0.9986
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "gate_count_aoi",
+    "correlation": 0.9985
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.9981
+  },
+  {
+    "feature_1": "log_netlist_combinational_cells",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9979
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.9973
+  },
+  {
+    "feature_1": "rtl_source_bytes",
+    "feature_2": "log_rtl_source_bytes",
+    "correlation": 0.9943
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9942
+  },
+  {
+    "feature_1": "gate_count_aoi",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.994
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_netlist_total_cells",
+    "correlation": 0.9935
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9932
+  },
+  {
+    "feature_1": "rtl_source_lines",
+    "feature_2": "log_rtl_source_lines",
+    "correlation": 0.9924
+  },
+  {
+    "feature_1": "gate_count_xor",
+    "feature_2": "gate_count_aoi",
+    "correlation": 0.9924
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "gate_count_nor",
+    "correlation": 0.992
+  },
+  {
+    "feature_1": "log_gate_count_aoi",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9919
+  },
+  {
+    "feature_1": "log_total_nets",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9919
+  },
+  {
+    "feature_1": "rtl_code_lines",
+    "feature_2": "log_rtl_source_lines",
+    "correlation": 0.9917
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9911
+  },
+  {
+    "feature_1": "rtl_source_lines",
+    "feature_2": "log_rtl_code_lines",
+    "correlation": 0.991
+  },
+  {
+    "feature_1": "rtl_code_lines",
+    "feature_2": "log_rtl_code_lines",
+    "correlation": 0.9905
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "gate_count_nor",
+    "correlation": 0.9903
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9896
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "gate_count_nand",
+    "correlation": 0.9893
+  },
+  {
+    "feature_1": "total_nets",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9889
+  },
+  {
+    "feature_1": "feat_density_proxy",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9886
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9885
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9882
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9881
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "total_nets",
+    "correlation": 0.9879
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "gate_count_aoi",
+    "correlation": 0.9879
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_netlist_combinational_cells",
+    "correlation": 0.9879
+  },
+  {
+    "feature_1": "log_gate_count_nor",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9873
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.987
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "gate_count_xor",
+    "correlation": 0.9866
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.9864
+  },
+  {
+    "feature_1": "log_netlist_combinational_cells",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9858
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9857
+  },
+  {
+    "feature_1": "log_netlist_combinational_cells",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.9855
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.985
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "netlist_combinational_cells",
+    "correlation": 0.9849
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_netlist_total_cells",
+    "correlation": 0.9847
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_netlist_combinational_cells",
+    "correlation": 0.9846
+  },
+  {
+    "feature_1": "rtl_source_bytes",
+    "feature_2": "rtl_source_lines",
+    "correlation": 0.9843
+  },
+  {
+    "feature_1": "rtl_source_bytes",
+    "feature_2": "rtl_code_lines",
+    "correlation": 0.9843
+  },
+  {
+    "feature_1": "rtl_source_lines",
+    "feature_2": "log_rtl_source_bytes",
+    "correlation": 0.9823
+  },
+  {
+    "feature_1": "rtl_code_lines",
+    "feature_2": "log_rtl_source_bytes",
+    "correlation": 0.9822
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.982
+  },
+  {
+    "feature_1": "gate_count_xor",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.9816
+  },
+  {
+    "feature_1": "log_gate_count_nand",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.9804
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.9779
+  },
+  {
+    "feature_1": "log_gate_count_nor",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9768
+  },
+  {
+    "feature_1": "gate_count_oai",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.976
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "feat_comb_ratio",
+    "correlation": 0.9756
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "gate_count_xor",
+    "correlation": 0.9751
+  },
+  {
+    "feature_1": "log_rtl_source_bytes",
+    "feature_2": "log_rtl_source_lines",
+    "correlation": 0.974
+  },
+  {
+    "feature_1": "log_gate_count_nand",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.9739
+  },
+  {
+    "feature_1": "log_gate_count_nand",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9739
+  },
+  {
+    "feature_1": "pd_clock_period_ns",
+    "feature_2": "feat_clock_freq_mhz",
+    "correlation": 0.9738
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9723
+  },
+  {
+    "feature_1": "log_rtl_source_bytes",
+    "feature_2": "log_rtl_code_lines",
+    "correlation": 0.9723
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "gate_count_or",
+    "correlation": 0.9721
+  },
+  {
+    "feature_1": "gate_count_xor",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.972
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "feat_fanout_intensity",
+    "correlation": 0.972
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "netlist_buffer_count",
+    "correlation": 0.9719
+  },
+  {
+    "feature_1": "log_netlist_combinational_cells",
+    "feature_2": "log_gate_count_nand",
+    "correlation": 0.9719
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.9713
+  },
+  {
+    "feature_1": "log_gate_count_nor",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.9703
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_netlist_total_cells",
+    "correlation": 0.9697
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "gate_count_aoi",
+    "correlation": 0.9694
+  },
+  {
+    "feature_1": "log_netlist_combinational_cells",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.968
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9677
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_gate_count_nand",
+    "correlation": 0.9667
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "gate_count_aoi",
+    "correlation": 0.9656
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "feat_fanout_intensity",
+    "correlation": 0.9656
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "gate_count_or",
+    "correlation": 0.9644
+  },
+  {
+    "feature_1": "rtl_source_bytes",
+    "feature_2": "log_rtl_source_lines",
+    "correlation": 0.9642
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.964
+  },
+  {
+    "feature_1": "gate_count_aoi",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9627
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9618
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_gate_count_nand",
+    "correlation": 0.9617
+  },
+  {
+    "feature_1": "rtl_source_bytes",
+    "feature_2": "log_rtl_code_lines",
+    "correlation": 0.9614
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_gate_count_and",
+    "correlation": 0.9612
+  },
+  {
+    "feature_1": "log_gate_count_nand",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9603
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "total_nets",
+    "correlation": 0.9602
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "gate_count_xor",
+    "correlation": 0.96
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.9591
+  },
+  {
+    "feature_1": "gate_count_oai",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9584
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_netlist_combinational_cells",
+    "correlation": 0.9584
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9582
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.9568
+  },
+  {
+    "feature_1": "rtl_num_registers",
+    "feature_2": "feat_clock_freq_mhz",
+    "correlation": 0.9565
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "gate_count_xor",
+    "correlation": 0.9563
+  },
+  {
+    "feature_1": "net_fanout_std",
+    "feature_2": "feat_fanout_intensity",
+    "correlation": 0.9554
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.955
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "gate_count_nor",
+    "correlation": 0.9548
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9545
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9541
+  },
+  {
+    "feature_1": "log_netlist_combinational_cells",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.9541
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9532
+  },
+  {
+    "feature_1": "log_gate_count_oai",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9503
+  },
+  {
+    "feature_1": "gate_count_oai",
+    "feature_2": "total_nets",
+    "correlation": 0.9495
+  },
+  {
+    "feature_1": "log_gate_count_nor",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9491
+  },
+  {
+    "feature_1": "feat_seq_ratio",
+    "feature_2": "log_netlist_sequential_cells",
+    "correlation": 0.9485
+  },
+  {
+    "feature_1": "feat_ff_ratio",
+    "feature_2": "log_netlist_sequential_cells",
+    "correlation": 0.9485
+  },
+  {
+    "feature_1": "feat_depth_per_cell",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.9482
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "gate_count_xor",
+    "correlation": 0.947
+  },
+  {
+    "feature_1": "gate_count_aoi",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9466
+  },
+  {
+    "feature_1": "gate_count_mux",
+    "feature_2": "net_fanout_max",
+    "correlation": 0.9454
+  },
+  {
+    "feature_1": "gate_count_oai",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.9443
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.9441
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9439
+  },
+  {
+    "feature_1": "rtl_num_wires",
+    "feature_2": "rtl_num_comb_assignments",
+    "correlation": 0.9415
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "netlist_inverter_count",
+    "correlation": 0.941
+  },
+  {
+    "feature_1": "log_gate_count_nand",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9398
+  },
+  {
+    "feature_1": "gate_count_nand",
+    "feature_2": "gate_count_xor",
+    "correlation": 0.9395
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.938
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.9374
+  },
+  {
+    "feature_1": "gate_count_nand",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9358
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.935
+  },
+  {
+    "feature_1": "log_gate_count_aoi",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9334
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.9328
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_gate_count_and",
+    "correlation": 0.9319
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "gate_count_nor",
+    "correlation": 0.9306
+  },
+  {
+    "feature_1": "gate_count_xor",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9306
+  },
+  {
+    "feature_1": "log_gate_count_and",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9299
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.9287
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "gate_count_aoi",
+    "correlation": 0.9284
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9284
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_gate_count_nand",
+    "correlation": 0.9274
+  },
+  {
+    "feature_1": "feat_depth_per_cell",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9265
+  },
+  {
+    "feature_1": "gate_count_xor",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9261
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "total_nets",
+    "correlation": 0.9259
+  },
+  {
+    "feature_1": "gate_count_and",
+    "feature_2": "log_gate_count_and",
+    "correlation": 0.9243
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "total_nets",
+    "correlation": 0.9239
+  },
+  {
+    "feature_1": "pd_target_utilization",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9238
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9225
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.9224
+  },
+  {
+    "feature_1": "net_fanout_std",
+    "feature_2": "log_netlist_total_cells",
+    "correlation": 0.9224
+  },
+  {
+    "feature_1": "feat_depth_per_cell",
+    "feature_2": "log_gate_count_nand",
+    "correlation": 0.9224
+  },
+  {
+    "feature_1": "net_fanout_std",
+    "feature_2": "log_total_nets",
+    "correlation": 0.921
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "total_nets",
+    "correlation": 0.9207
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "netlist_inverter_count",
+    "correlation": 0.9196
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "gate_count_or",
+    "correlation": 0.9194
+  },
+  {
+    "feature_1": "gate_count_nor",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9194
+  },
+  {
+    "feature_1": "log_gate_count_oai",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9185
+  },
+  {
+    "feature_1": "gate_count_oai",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.9181
+  },
+  {
+    "feature_1": "gate_count_aoi",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9177
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.9176
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "netlist_buffer_count",
+    "correlation": 0.9174
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9152
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.9151
+  },
+  {
+    "feature_1": "gate_count_aoi",
+    "feature_2": "total_nets",
+    "correlation": 0.9144
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.9144
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9137
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9123
+  },
+  {
+    "feature_1": "gate_count_oai",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9116
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.9113
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "netlist_inverter_count",
+    "correlation": 0.9112
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.9109
+  },
+  {
+    "feature_1": "net_fanout_std",
+    "feature_2": "log_netlist_combinational_cells",
+    "correlation": 0.9107
+  },
+  {
+    "feature_1": "rtl_num_registers",
+    "feature_2": "pd_clock_period_ns",
+    "correlation": 0.9104
+  },
+  {
+    "feature_1": "gate_count_nand",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9096
+  },
+  {
+    "feature_1": "log_netlist_combinational_cells",
+    "feature_2": "log_gate_count_and",
+    "correlation": 0.9096
+  },
+  {
+    "feature_1": "gate_count_and",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9091
+  },
+  {
+    "feature_1": "feat_depth_per_cell",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.909
+  },
+  {
+    "feature_1": "total_nets",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9089
+  },
+  {
+    "feature_1": "gate_count_aoi",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.9083
+  },
+  {
+    "feature_1": "log_gate_count_and",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9081
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_gate_count_and",
+    "correlation": 0.9077
+  },
+  {
+    "feature_1": "net_fanout_std",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9076
+  },
+  {
+    "feature_1": "log_gate_count_nand",
+    "feature_2": "log_gate_count_and",
+    "correlation": 0.9075
+  },
+  {
+    "feature_1": "log_gate_count_aoi",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.9069
+  },
+  {
+    "feature_1": "gate_count_aoi",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.9066
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "gate_count_aoi",
+    "correlation": 0.9065
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "pd_target_utilization",
+    "correlation": 0.9063
+  },
+  {
+    "feature_1": "pd_target_utilization",
+    "feature_2": "log_total_nets",
+    "correlation": 0.9054
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.9053
+  },
+  {
+    "feature_1": "netlist_sequential_cells",
+    "feature_2": "net_fanout_max",
+    "correlation": 0.905
+  },
+  {
+    "feature_1": "netlist_ff_count",
+    "feature_2": "net_fanout_max",
+    "correlation": 0.905
+  },
+  {
+    "feature_1": "gate_count_xor",
+    "feature_2": "total_nets",
+    "correlation": 0.9047
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9044
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.9038
+  },
+  {
+    "feature_1": "pd_target_utilization",
+    "feature_2": "log_netlist_total_cells",
+    "correlation": 0.9028
+  },
+  {
+    "feature_1": "feat_density_proxy",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9021
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.9019
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.9011
+  },
+  {
+    "feature_1": "pd_target_utilization",
+    "feature_2": "feat_fanout_intensity",
+    "correlation": 0.9011
+  },
+  {
+    "feature_1": "gate_count_and",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.901
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.9004
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_gate_count_nand",
+    "correlation": 0.8986
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "gate_count_nand",
+    "correlation": 0.8962
+  },
+  {
+    "feature_1": "gate_count_nand",
+    "feature_2": "gate_count_aoi",
+    "correlation": 0.8957
+  },
+  {
+    "feature_1": "pd_target_utilization",
+    "feature_2": "feat_comb_ratio",
+    "correlation": 0.8957
+  },
+  {
+    "feature_1": "gate_count_xor",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.8953
+  },
+  {
+    "feature_1": "feat_cells_per_rtl_line",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.8951
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "gate_count_xor",
+    "correlation": 0.895
+  },
+  {
+    "feature_1": "pd_target_utilization",
+    "feature_2": "log_netlist_combinational_cells",
+    "correlation": 0.8946
+  },
+  {
+    "feature_1": "total_nets",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.8933
+  },
+  {
+    "feature_1": "feat_clock_freq_mhz",
+    "feature_2": "log_rtl_source_bytes",
+    "correlation": 0.8933
+  },
+  {
+    "feature_1": "total_nets",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.8931
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.893
+  },
+  {
+    "feature_1": "log_gate_count_and",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.8917
+  },
+  {
+    "feature_1": "rtl_num_registers",
+    "feature_2": "log_rtl_source_lines",
+    "correlation": 0.8895
+  },
+  {
+    "feature_1": "rtl_num_registers",
+    "feature_2": "log_rtl_code_lines",
+    "correlation": 0.8874
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "net_fanout_std",
+    "correlation": 0.8874
+  },
+  {
+    "feature_1": "gate_count_nand",
+    "feature_2": "gate_count_oai",
+    "correlation": 0.8873
+  },
+  {
+    "feature_1": "rtl_num_registers",
+    "feature_2": "log_rtl_source_bytes",
+    "correlation": 0.8868
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.8868
+  },
+  {
+    "feature_1": "gate_count_xor",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.8846
+  },
+  {
+    "feature_1": "feat_density_proxy",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.8843
+  },
+  {
+    "feature_1": "gate_count_nand",
+    "feature_2": "gate_count_nor",
+    "correlation": 0.8828
+  },
+  {
+    "feature_1": "netlist_buffer_count",
+    "feature_2": "gate_count_nand",
+    "correlation": 0.8827
+  },
+  {
+    "feature_1": "rtl_num_ports",
+    "feature_2": "rtl_num_outputs",
+    "correlation": 0.8822
+  },
+  {
+    "feature_1": "gate_count_and",
+    "feature_2": "netlist_estimated_logic_depth",
+    "correlation": 0.8821
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.8807
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_gate_count_and",
+    "correlation": 0.8805
+  },
+  {
+    "feature_1": "feat_depth_per_cell",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.8792
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.8776
+  },
+  {
+    "feature_1": "feat_depth_per_cell",
+    "feature_2": "feat_cells_per_rtl_line",
+    "correlation": 0.877
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.8759
+  },
+  {
+    "feature_1": "net_fanout_std",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.8758
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "log_gate_count_nand",
+    "correlation": 0.8748
+  },
+  {
+    "feature_1": "net_fanout_max",
+    "feature_2": "net_fanout_std",
+    "correlation": 0.8744
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.874
+  },
+  {
+    "feature_1": "netlist_combinational_cells",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.8739
+  },
+  {
+    "feature_1": "feat_fanout_intensity",
+    "feature_2": "log_gate_count_mux",
+    "correlation": 0.8735
+  },
+  {
+    "feature_1": "gate_count_nand",
+    "feature_2": "total_nets",
+    "correlation": 0.869
+  },
+  {
+    "feature_1": "netlist_estimated_logic_depth",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.8661
+  },
+  {
+    "feature_1": "log_gate_count_nor",
+    "feature_2": "log_gate_count_and",
+    "correlation": 0.8651
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.8649
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "pd_num_routing_layers",
+    "correlation": 0.8638
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "pd_is_sky130",
+    "correlation": 0.8638
+  },
+  {
+    "feature_1": "pd_target_utilization",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.8636
+  },
+  {
+    "feature_1": "gate_count_and",
+    "feature_2": "feat_comb_ratio",
+    "correlation": 0.8633
+  },
+  {
+    "feature_1": "total_nets",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.8618
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "total_nets",
+    "correlation": 0.8611
+  },
+  {
+    "feature_1": "netlist_inverter_count",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.8606
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.8603
+  },
+  {
+    "feature_1": "gate_count_nand",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.859
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "gate_count_nand",
+    "correlation": 0.8589
+  },
+  {
+    "feature_1": "log_gate_count_and",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.8584
+  },
+  {
+    "feature_1": "feat_cells_per_rtl_line",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.8583
+  },
+  {
+    "feature_1": "total_nets",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.8582
+  },
+  {
+    "feature_1": "gate_count_and",
+    "feature_2": "log_gate_count_nand",
+    "correlation": 0.8566
+  },
+  {
+    "feature_1": "feat_clock_freq_mhz",
+    "feature_2": "log_rtl_source_lines",
+    "correlation": 0.856
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.8556
+  },
+  {
+    "feature_1": "feat_comb_ratio",
+    "feature_2": "feat_depth_per_cell",
+    "correlation": 0.8554
+  },
+  {
+    "feature_1": "rtl_num_registers",
+    "feature_2": "rtl_source_lines",
+    "correlation": 0.8548
+  },
+  {
+    "feature_1": "feat_clock_freq_mhz",
+    "feature_2": "log_rtl_code_lines",
+    "correlation": 0.8545
+  },
+  {
+    "feature_1": "log_netlist_combinational_cells",
+    "feature_2": "log_gate_count_mux",
+    "correlation": 0.8538
+  },
+  {
+    "feature_1": "log_netlist_total_cells",
+    "feature_2": "log_gate_count_mux",
+    "correlation": 0.8533
+  },
+  {
+    "feature_1": "rtl_source_bytes",
+    "feature_2": "feat_clock_freq_mhz",
+    "correlation": 0.8531
+  },
+  {
+    "feature_1": "feat_density_proxy",
+    "feature_2": "log_gate_count_nor",
+    "correlation": 0.8531
+  },
+  {
+    "feature_1": "gate_count_or",
+    "feature_2": "feat_density_proxy",
+    "correlation": 0.8529
+  },
+  {
+    "feature_1": "feat_depth_per_cell",
+    "feature_2": "log_netlist_combinational_cells",
+    "correlation": 0.8527
+  },
+  {
+    "feature_1": "gate_count_and",
+    "feature_2": "log_gate_count_oai",
+    "correlation": 0.8525
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "gate_count_or",
+    "correlation": 0.8523
+  },
+  {
+    "feature_1": "pd_num_routing_layers",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.852
+  },
+  {
+    "feature_1": "pd_is_sky130",
+    "feature_2": "log_target_cell_area_um2",
+    "correlation": 0.852
+  },
+  {
+    "feature_1": "feat_density_proxy",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.8507
+  },
+  {
+    "feature_1": "net_fanout_mean",
+    "feature_2": "log_gate_count_aoi",
+    "correlation": 0.8505
+  },
+  {
+    "feature_1": "netlist_total_cells",
+    "feature_2": "log_gate_count_or",
+    "correlation": 0.85
+  }
+]

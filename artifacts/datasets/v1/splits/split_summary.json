@@ -1,0 +1,22 @@
+{
+  "total_samples": 42,
+  "total_designs": 6,
+  "train_samples": 35,
+  "train_designs": [
+    "alu",
+    "booth_multiplier",
+    "fifo_sync",
+    "uart_tx"
+  ],
+  "val_samples": 2,
+  "val_designs": [
+    "priority_encoder"
+  ],
+  "test_samples": 5,
+  "test_designs": [
+    "fsm_traffic"
+  ],
+  "train_sample_pct": 83.3,
+  "val_sample_pct": 4.8,
+  "test_sample_pct": 11.9
+}

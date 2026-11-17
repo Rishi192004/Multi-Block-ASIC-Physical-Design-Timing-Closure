@@ -41,3 +41,13 @@ run_uart_tx_pd_test_d0986eda,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,979
 run_uart_tx_pd_test_b27d5e83,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,2.523,1.376,0.876,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:15:37.318325+00:00
 run_uart_tx_pd_test_02a67a10,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,2.485,1.48,0.723,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:15:39.874677+00:00
 run_uart_tx_pd_test_832f4929,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,2.56,1.478,0.774,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:15:42.387293+00:00
+run_uart_tx_pd_test_5b1758ec,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,2.801,1.529,1.024,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:31:43.859951+00:00
+run_uart_tx_pd_test_31fb2602,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,1.474,1.377,0.0,113.0,0.0,,,,,,2026-11-17T19:31:46.685317+00:00
+run_uart_tx_pd_test_4453dd5a,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,2.432,1.378,0.723,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:31:48.188774+00:00
+run_uart_tx_pd_test_6d16f462,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,2.482,1.43,0.774,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:31:50.662965+00:00
+run_uart_tx_pd_test_8f7794e7,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,2.454,1.428,0.773,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:31:53.168630+00:00
+run_uart_tx_pd_test_773855cc,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,3.944,1.932,1.487,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:40:23.350731+00:00
+run_uart_tx_pd_test_aa80f84c,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,2.646,2.336,0.0,113.0,0.0,,,,,,2026-11-17T19:40:27.411104+00:00
+run_uart_tx_pd_test_1e44313d,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,3.812,2.343,0.876,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:40:30.270096+00:00
+run_uart_tx_pd_test_fe08f813,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,3.05,1.68,0.976,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:40:34.116300+00:00
+run_uart_tx_pd_test_1cc7021d,uart_tx_pd_test,uart_tx,COMPLETED,sky130hd,10.0,9793ca528f5b,3.026,1.835,0.875,113.0,0.0,7.06,0.0,0.000167,,,2026-11-17T19:40:37.203961+00:00
