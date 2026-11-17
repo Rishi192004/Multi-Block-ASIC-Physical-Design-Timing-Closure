@@ -19,9 +19,15 @@ class ToolRunner:
         self.use_wsl = use_wsl and (sys.platform == "win32")
         self.wsl_distro = wsl_distro
 
-    def _convert_path(self, path: Path) -> str:
+    def _convert_path(self, path: Path | str) -> str:
         """Convert Windows path to WSL path if running via WSL, using space-free symlink if applicable."""
-        abs_p = str(path.resolve())
+        str_raw = str(path).replace("\\", "/")
+        # If already a Linux absolute path (e.g. /opt/..., /usr/..., /mnt/...), preserve it
+        if str_raw.startswith(("/", "/opt", "/usr", "/mnt", "/home", "/etc")):
+            if not (len(str_raw) > 2 and str_raw[1] == ":"):
+                return str_raw
+
+        abs_p = str(Path(path).resolve())
         ws_win = "C:\\Users\\Lenovo\\Desktop\\CAD_AI PROJEC"
         ws_wsl = "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC"
 

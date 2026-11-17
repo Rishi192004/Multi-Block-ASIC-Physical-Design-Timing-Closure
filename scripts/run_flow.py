@@ -47,6 +47,12 @@ BENCHMARK_REGISTRY: Dict[str, Dict[str, Any]] = {
         "file": "benchmarks/booth_multiplier/booth_multiplier.v",
         "clock_period_ns": 12.0,
         "clock_port": "clk"
+    },
+    "priority_encoder": {
+        "top_module": "priority_encoder",
+        "file": "benchmarks/priority_encoder/priority_encoder.v",
+        "clock_period_ns": 7.0,
+        "clock_port": "clk"
     }
 }
 
@@ -97,10 +103,14 @@ def run_single_design(
 def main():
     parser = argparse.ArgumentParser(description="EDA-Genius Automated Flow Runner")
     parser.add_argument("--design", type=str, help="Specific benchmark design to run (alu, uart_tx, etc.)")
-    parser.add_argument("--all-benchmarks", action="store_true", help="Execute regression across all 5 benchmarks")
+    parser.add_argument("--all-benchmarks", action="store_true", help="Execute regression across all 6 benchmarks")
     parser.add_argument("--pdk", type=str, default="generic", help="Target PDK (generic, sky130hd)")
     parser.add_argument("--run-pd", action="store_true", help="Run OpenROAD physical design flow after synthesis")
     parser.add_argument("--recover", type=str, help="Run ID for partial run recovery")
+    parser.add_argument("--concurrent", action="store_true",
+                        help="Execute all-benchmarks run concurrently (max-workers processes)")
+    parser.add_argument("--max-workers", type=int, default=2,
+                        help="Max concurrent synthesis processes when --concurrent is set (default: 2)")
     parser.add_argument("--export-postgres-json", type=str, default="./artifacts/reports/postgres_payloads.json",
                         help="Path to save PostgreSQL relational payloads")
 
@@ -116,33 +126,71 @@ def main():
         parser.print_help()
         sys.exit(1)
 
+    concurrent_mode = getattr(args, "concurrent", False) and args.all_benchmarks
+    max_workers = getattr(args, "max_workers", 2)
+
     print("=" * 70)
     print("  EDA-Genius: Automated EDA Orchestration & PPA Extraction")
     print(f"  Target PDK: {args.pdk} | Physical Design Enabled: {args.run_pd}")
     print(f"  Designs to Execute: {', '.join(designs_to_run)}")
+    print(f"  Execution Mode: {'CONCURRENT (%d workers)' % max_workers if concurrent_mode else 'SEQUENTIAL'}")
     print("=" * 70)
 
     results = []
     pg_payloads = []
 
-    for d_name in designs_to_run:
-        print(f"\n>>> Running Design: {d_name} ...")
-        res = run_single_design(
-            orchestrator=orchestrator,
-            design_name=d_name,
-            target_pdk=args.pdk,
-            run_pd=args.run_pd,
-            recover_id=args.recover
-        )
-        rec = res["record"]
-        pg_payloads.append(res["pg_payload"])
-        results.append(rec)
+    if concurrent_mode:
+        # Build DesignInput list for batch execution
+        design_inputs = []
+        for d_name in designs_to_run:
+            info = BENCHMARK_REGISTRY[d_name]
+            v_path = Path(info["file"])
+            di = DesignInput(
+                design_name=d_name,
+                top_module=info["top_module"],
+                verilog_files=[v_path],
+                clock_period_ns=info["clock_period_ns"],
+                clock_port_name=info["clock_port"],
+                target_pdk=args.pdk
+            )
+            pdk_config = None
+            if args.run_pd:
+                cfg = load_config()
+                if args.pdk in cfg.pdks:
+                    pdk_config = cfg.pdks[args.pdk].model_dump()
+            design_inputs.append((di, pdk_config))
 
-        print(f"    Status: {rec.status.value}")
-        print(f"    Synthesis Runtime: {rec.synthesis_runtime_s}s")
-        print(f"    Total Cells: {rec.metrics.get('total_cells', 0)}")
-        print(f"    Cell Types: {rec.cell_statistics}")
-        print(f"    Artifact: {rec.artifacts.get('netlist_v')}")
+        print(f"\n>>> Launching {len(design_inputs)} designs concurrently...")
+        batch_records = orchestrator.execute_batch(
+            designs=design_inputs,
+            run_physical_design=args.run_pd,
+            max_workers=max_workers
+        )
+        for rec in batch_records:
+            pg_payloads.append(RecordAdapter.to_postgres_payload(rec))
+            results.append(rec)
+            print(f"  [{rec.design_name}] Status: {rec.status.value} | "
+                  f"Cells: {rec.metrics.get('total_cells', 0)} | "
+                  f"Runtime: {rec.total_runtime_s}s")
+    else:
+        for d_name in designs_to_run:
+            print(f"\n>>> Running Design: {d_name} ...")
+            res = run_single_design(
+                orchestrator=orchestrator,
+                design_name=d_name,
+                target_pdk=args.pdk,
+                run_pd=args.run_pd,
+                recover_id=args.recover
+            )
+            rec = res["record"]
+            pg_payloads.append(res["pg_payload"])
+            results.append(rec)
+
+            print(f"    Status: {rec.status.value}")
+            print(f"    Synthesis Runtime: {rec.synthesis_runtime_s}s")
+            print(f"    Total Cells: {rec.metrics.get('total_cells', 0)}")
+            print(f"    Cell Types: {rec.cell_statistics}")
+            print(f"    Artifact: {rec.artifacts.get('netlist_v')}")
 
     # Export postgres payloads
     out_pg = Path(args.export_postgres_json)

@@ -1,7 +1,7 @@
 """Transforms ExperimentRecord objects into PostgreSQL-ready entities."""
 
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
 from src.common.types import ExperimentRecord, ParsedMetric, RunStatus, StageName
 
@@ -88,7 +88,7 @@ class RecordAdapter:
                 "metric_name": metric_name,
                 "float_value": float(val) if isinstance(val, (int, float)) else None,
                 "string_value": str(val) if not isinstance(val, (int, float)) else None,
-                "recorded_at": datetime.utcnow().isoformat()
+                "recorded_at": datetime.now(timezone.utc).isoformat()
             })
 
         return {

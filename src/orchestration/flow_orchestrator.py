@@ -5,10 +5,18 @@ import sys
 import json
 import csv
 import hashlib
-from datetime import datetime
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed, Future
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Any, Optional, List, Tuple
 import uuid
+
+
+def _now() -> datetime:
+    """Return current UTC time as timezone-aware datetime (Python 3.12+ safe)."""
+    return datetime.now(timezone.utc)
+
 
 from src.common.types import (
     DesignInput,
@@ -87,7 +95,7 @@ class FlowOrchestrator:
         max_retries: int = 1
     ) -> ExperimentRecord:
         """Execute the end-to-end EDA pipeline with reliability, retry policies, and tracking."""
-        start_time = datetime.utcnow()
+        start_time = _now()
         run_id = recover_run_id or f"run_{design_input.design_name}_{uuid.uuid4().hex[:8]}"
         workdir = self.runs_dir / run_id
         workdir.mkdir(parents=True, exist_ok=True)
@@ -157,7 +165,7 @@ class FlowOrchestrator:
                         record.status = RunStatus.FAILED
                         record.failure_stage = failure_stage
                         record.error_summary = error_summary
-                        record.completed_at = datetime.utcnow()
+                        record.completed_at = _now()
                         record.total_runtime_s = round((record.completed_at - start_time).total_seconds(), 3)
                         self._persist_record(record)
                         return record
@@ -199,7 +207,7 @@ class FlowOrchestrator:
                 record.error_summary = error_summary
 
         # 4. Finalize status and metrics
-        record.completed_at = datetime.utcnow()
+        record.completed_at = _now()
         record.total_runtime_s = round((record.completed_at - start_time).total_seconds(), 3)
         record.metrics = all_metrics
         if failure_stage is None:
@@ -246,9 +254,71 @@ class FlowOrchestrator:
         }
 
         with open(csv_path, "a", newline="", encoding="utf-8") as cf:
-            writer = csv.DictWriter(cf, fieldnames=list(flat_row.keys()))
-            if not file_exists:
-                writer.writeheader()
-            writer.writerow(flat_row)
+            with self._csv_lock:
+                writer = csv.DictWriter(cf, fieldnames=list(flat_row.keys()))
+                if not file_exists:
+                    writer.writeheader()
+                writer.writerow(flat_row)
 
         logger.info(f"Persisted experiment record: {json_path} and updated {csv_path}")
+
+    # ------------------------------------------------------------------ #
+    #  Concurrent Experiment Execution (Step 5)                           #
+    # ------------------------------------------------------------------ #
+
+    _csv_lock = threading.Lock()  # serialize CSV appends across threads
+
+    def execute_batch(
+        self,
+        designs: List[Tuple[DesignInput, Optional[Dict[str, Any]]]],
+        run_physical_design: bool = False,
+        max_workers: int = 2,
+        max_retries: int = 1
+    ) -> List[ExperimentRecord]:
+        """Execute multiple designs concurrently with bounded thread pool.
+
+        Args:
+            designs: List of (DesignInput, pdk_config) tuples.
+            run_physical_design: Whether to run OpenROAD PD flow per design.
+            max_workers: Maximum concurrent synthesis/PD processes.
+            max_retries: Per-design retry limit for transient failures.
+
+        Returns:
+            List of ExperimentRecord in submission order.
+        """
+        logger.info(
+            f"Launching batch of {len(designs)} designs with max_workers={max_workers}"
+        )
+        results: List[Optional[ExperimentRecord]] = [None] * len(designs)
+
+        def _run_one(idx: int, design_input: DesignInput, pdk_config):
+            try:
+                return idx, self.execute_flow(
+                    design_input=design_input,
+                    pdk_config=pdk_config,
+                    run_physical_design=run_physical_design,
+                    max_retries=max_retries
+                )
+            except Exception as exc:
+                logger.error(
+                    f"Batch design [{design_input.design_name}] raised exception: {exc}"
+                )
+                return idx, None
+
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            futures: Dict[Future, int] = {}
+            for i, (di, pdk_cfg) in enumerate(designs):
+                fut = pool.submit(_run_one, i, di, pdk_cfg)
+                futures[fut] = i
+
+            for fut in as_completed(futures):
+                idx, record = fut.result()
+                results[idx] = record
+                if record:
+                    logger.info(
+                        f"Batch [{record.design_name}] finished: {record.status.value} "
+                        f"({record.total_runtime_s:.1f}s)"
+                    )
+
+        return [r for r in results if r is not None]
+

@@ -4,7 +4,7 @@ from enum import Enum
 from typing import Dict, Any, List, Optional
 from pathlib import Path
 from pydantic import BaseModel, Field
-from datetime import datetime
+from datetime import datetime, timezone
 import uuid
 
 
@@ -51,8 +51,8 @@ class ExecutionResult(BaseModel):
     artifact_paths: Dict[str, str] = Field(default_factory=dict)
     success: bool
     error_message: Optional[str] = None
-    started_at: datetime = Field(default_factory=datetime.utcnow)
-    completed_at: datetime = Field(default_factory=datetime.utcnow)
+    started_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    completed_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 
 class ParsedMetric(BaseModel):

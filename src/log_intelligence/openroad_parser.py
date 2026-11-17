@@ -85,6 +85,42 @@ class OpenROADLogParser:
                         raw_snippet=raw_line
                     ))
 
+                # Timing metrics from log (fallback / primary)
+                m_wns = self.re_wns.search(raw_line)
+                if m_wns:
+                    metrics.append(ParsedMetric(
+                        category="TIMING",
+                        name="wns",
+                        float_value=float(m_wns.group(1)),
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
+
+                m_tns = self.re_tns.search(raw_line)
+                if m_tns:
+                    metrics.append(ParsedMetric(
+                        category="TIMING",
+                        name="tns",
+                        float_value=float(m_tns.group(1)),
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
+
+                # Power from log (fallback / primary)
+                m_tp = self.re_total_power.search(raw_line)
+                if m_tp:
+                    total_pwr = float(m_tp.group(4))
+                    metrics.append(ParsedMetric(
+                        category="POWER",
+                        name="total_power_w",
+                        float_value=total_pwr,
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
+
                 byte_offset += len(line.encode("utf-8"))
 
         return metrics
@@ -161,6 +197,42 @@ class OpenROADLogParser:
                         raw_snippet=raw_line
                     ))
 
+                # Timing metrics from log (fallback / primary)
+                m_wns = self.re_wns.search(raw_line)
+                if m_wns:
+                    metrics.append(ParsedMetric(
+                        category="TIMING",
+                        name="wns",
+                        float_value=float(m_wns.group(1)),
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
+
+                m_tns = self.re_tns.search(raw_line)
+                if m_tns:
+                    metrics.append(ParsedMetric(
+                        category="TIMING",
+                        name="tns",
+                        float_value=float(m_tns.group(1)),
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
+
+                # Power from log (fallback / primary)
+                m_tp = self.re_total_power.search(raw_line)
+                if m_tp:
+                    total_pwr = float(m_tp.group(4))
+                    metrics.append(ParsedMetric(
+                        category="POWER",
+                        name="total_power_w",
+                        float_value=total_pwr,
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
+
                 byte_offset += len(line.encode("utf-8"))
 
         return metrics
@@ -215,6 +287,42 @@ class OpenROADLogParser:
                         ))
                     except ValueError:
                         pass
+
+                # Timing metrics from log (fallback / primary)
+                m_wns = self.re_wns.search(raw_line)
+                if m_wns:
+                    metrics.append(ParsedMetric(
+                        category="TIMING",
+                        name="wns",
+                        float_value=float(m_wns.group(1)),
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
+
+                m_tns = self.re_tns.search(raw_line)
+                if m_tns:
+                    metrics.append(ParsedMetric(
+                        category="TIMING",
+                        name="tns",
+                        float_value=float(m_tns.group(1)),
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
+
+                # Power from log (fallback / primary)
+                m_tp = self.re_total_power.search(raw_line)
+                if m_tp:
+                    total_pwr = float(m_tp.group(4))
+                    metrics.append(ParsedMetric(
+                        category="POWER",
+                        name="total_power_w",
+                        float_value=total_pwr,
+                        line_number=line_no,
+                        byte_offset=byte_offset,
+                        raw_snippet=raw_line
+                    ))
 
                 byte_offset += len(line.encode("utf-8"))
 

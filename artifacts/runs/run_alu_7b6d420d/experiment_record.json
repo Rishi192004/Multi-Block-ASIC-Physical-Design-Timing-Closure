@@ -1,0 +1,25 @@
+{
+  "run_id": "run_alu_7b6d420d",
+  "design_name": "alu",
+  "top_module": "alu",
+  "status": "FAILED",
+  "rtl_hash": "0d4466e0bb077f3f3677d5358b3f046a01d4d5ef320110768f58ddcc5fbfa35f",
+  "config_hash": "d417d4788422ae3d4f69045f9d1098633103fc5963d2d3486633481741930c16",
+  "tool_versions": {
+    "yosys": "0.9+",
+    "openroad": "2.0+"
+  },
+  "target_pdk": "sky130hd",
+  "clock_period_ns": 5.0,
+  "started_at": "2026-11-17T19:04:48.861157Z",
+  "completed_at": "2026-11-17T19:04:51.396777Z",
+  "total_runtime_s": 2.536,
+  "synthesis_runtime_s": 0.0,
+  "physical_design_runtime_s": 0.0,
+  "failure_stage": "SYNTHESIS",
+  "error_summary": "yosys failed at stage SYNTHESIS with exit code 1",
+  "metrics": {},
+  "cell_statistics": {},
+  "artifacts": {},
+  "raw_reports": {}
+}

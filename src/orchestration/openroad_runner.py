@@ -8,14 +8,12 @@ from src.orchestration.tool_runner import ToolRunner
 from src.log_intelligence.openroad_parser import OpenROADLogParser
 from src.common.logger import logger
 
-SKY130_TRACKS = """
-make_tracks li1  -x_offset 0.23 -x_pitch 0.46 -y_offset 0.17 -y_pitch 0.34
+SKY130_TRACKS = """make_tracks li1  -x_offset 0.23 -x_pitch 0.46 -y_offset 0.17 -y_pitch 0.34
 make_tracks met1 -x_offset 0.17 -x_pitch 0.34 -y_offset 0.17 -y_pitch 0.34
 make_tracks met2 -x_offset 0.23 -x_pitch 0.46 -y_offset 0.23 -y_pitch 0.46
 make_tracks met3 -x_offset 0.34 -x_pitch 0.68 -y_offset 0.34 -y_pitch 0.68
 make_tracks met4 -x_offset 0.46 -x_pitch 0.92 -y_offset 0.46 -y_pitch 0.92
-make_tracks met5 -x_offset 1.70 -x_pitch 3.40 -y_offset 1.70 -y_pitch 3.40
-"""
+make_tracks met5 -x_offset 1.70 -x_pitch 3.40 -y_offset 1.70 -y_pitch 3.40"""
 
 
 class OpenROADRunner:
@@ -39,12 +37,10 @@ class OpenROADRunner:
                 f"create_clock -name core_clock -period {clock_period_ns} [get_ports {clock_port}]",
                 f"set_clock_uncertainty 0.25 [get_clocks core_clock]",
                 f"set_clock_transition 0.15 [get_clocks core_clock]",
-                # OpenSTA compatible: remove -no_clocks flag
                 f"set_input_delay  -clock core_clock {clock_period_ns * 0.2:.3f} [all_inputs]",
                 f"set_output_delay -clock core_clock {clock_period_ns * 0.2:.3f} [all_outputs]",
             ]
         else:
-            # Virtual clock for combinational-only design
             sdc += [
                 f"create_clock -name virt_clock -period {clock_period_ns}",
                 f"set_input_delay  -clock virt_clock {clock_period_ns * 0.2:.3f} [all_inputs]",
@@ -71,7 +67,7 @@ class OpenROADRunner:
         def_out     = self.runner._convert_path(workdir / f"{top}_placed.def")
 
         lines = [
-            f"# OpenROAD PD Script for {top} — {pdk} — EDA-Genius",
+            f"# OpenROAD PD Script for {top} - {pdk} - EDA-Genius",
             f'read_lef "{tech_lef}"',
             f'read_lef "{std_lef}"',
             f'read_liberty "{liberty}"',
@@ -79,8 +75,8 @@ class OpenROADRunner:
             f"link_design {top}",
             f'read_sdc "{sdc_wsl}"',
             "",
-            f"# Floorplan",
-            f'initialize_floorplan -site unithd -utilization 40 -aspect_ratio 1.0 -core_space 10.0',
+            "# Floorplan",
+            "initialize_floorplan -site unithd -utilization 40 -aspect_ratio 1.0 -core_space 10.0",
         ]
 
         if is_sky130:
@@ -93,12 +89,14 @@ class OpenROADRunner:
             f"global_placement -density {density}",
             "detailed_placement",
             "",
+            # OpenROAD TCL: use Tcl 'set fd / puts / close' to write reports to files.
+            # Shell-style '>' redirection is NOT valid OpenROAD Tcl syntax.
             "# Signoff Reports",
-            f'report_design_area > "{timing_rpt}"',
-            f'report_checks -path_delay min_max -digits 4 >> "{timing_rpt}"',
-            f'report_worst_slack -max >> "{timing_rpt}"',
-            f'report_tns >> "{timing_rpt}"',
-            f'report_power > "{power_rpt}"',
+            "report_design_area",
+            "report_checks -path_delay min_max -digits 4",
+            "report_worst_slack -max",
+            "report_tns",
+            "report_power",
             "",
             f'write_def "{def_out}"',
             "exit"
@@ -109,7 +107,6 @@ class OpenROADRunner:
         """Scan synthesized netlist to check if the top module has the given clock port."""
         try:
             text = netlist_path.read_text(errors="replace")
-            # Look for the port declaration, e.g. "input clk" or "input wire clk"
             import re
             return bool(re.search(rf'\binput\b[^;]*\b{re.escape(clock_port)}\b', text))
         except Exception:
@@ -143,6 +140,37 @@ class OpenROADRunner:
             tool=ToolType.OPENROAD, stage=StageName.PLACEMENT,
             timeout_s=timeout_s
         )
+
+        timing_f = workdir / "timing_signoff.rpt"
+        power_f = workdir / "power_signoff.rpt"
+
+        # Materialize dedicated signoff report files from actual OpenROAD tool output
+        if stdout_path.exists() and (not timing_f.exists() or timing_f.stat().st_size < 50):
+            try:
+                log_text = stdout_path.read_text(encoding="utf-8", errors="replace")
+                timing_lines = []
+                power_lines = []
+                in_timing = False
+                in_power = False
+                for line in log_text.splitlines():
+                    if "Design area" in line or "Startpoint:" in line:
+                        in_timing = True
+                    if "Group" in line and "Internal" in line and "Switching" in line:
+                        in_timing = False
+                        in_power = True
+                    if in_timing:
+                        timing_lines.append(line)
+                    if in_power:
+                        power_lines.append(line)
+                    if in_power and ("Total" in line and "%" in line):
+                        in_power = False
+
+                if timing_lines:
+                    timing_f.write_text("\n".join(timing_lines) + "\n", encoding="utf-8")
+                if power_lines:
+                    power_f.write_text("\n".join(power_lines) + "\n", encoding="utf-8")
+            except Exception as e:
+                logger.warning(f"Failed to materialize report files: {e}")
 
         for art, fname in [("def", f"{top}_placed.def"),
                            ("timing_rpt", "timing_signoff.rpt"),

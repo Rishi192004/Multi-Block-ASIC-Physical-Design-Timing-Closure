@@ -1,0 +1,58 @@
+{
+  "run_id": "run_priority_encoder_f6227214",
+  "design_name": "priority_encoder",
+  "top_module": "priority_encoder",
+  "status": "COMPLETED",
+  "rtl_hash": "3e48bebf263c4c2fa89ce30dae1bc6a81af04db31364afed9bd1fd0ab901c450",
+  "config_hash": "e10bda80403eb6f2626445ec5031d5c42ae7d1cd757ad994acb0908c6c21f54f",
+  "tool_versions": {
+    "yosys": "0.9+",
+    "openroad": "2.0+"
+  },
+  "target_pdk": "generic",
+  "clock_period_ns": 7.0,
+  "started_at": "2026-11-17T19:04:26.798365Z",
+  "completed_at": "2026-11-17T19:04:32.054516Z",
+  "total_runtime_s": 5.256,
+  "synthesis_runtime_s": 5.228,
+  "physical_design_runtime_s": 0.0,
+  "failure_stage": null,
+  "error_summary": null,
+  "metrics": {
+    "num_wires": 118.0,
+    "num_wire_bits": 139.0,
+    "num_memories": 0.0,
+    "total_cells": 121.0,
+    "cell_$_ANDNOT_": 20.0,
+    "cell_$_AOI3_": 2.0,
+    "cell_$_AOI4_": 3.0,
+    "cell_$_DFF_PN0_": 5.0,
+    "cell_$_NAND_": 1.0,
+    "cell_$_NOR_": 7.0,
+    "cell_$_NOT_": 2.0,
+    "cell_$_OAI3_": 4.0,
+    "cell_$_OAI4_": 8.0,
+    "cell_$_ORNOT_": 18.0,
+    "cell_$_OR_": 51.0
+  },
+  "cell_statistics": {
+    "$_ANDNOT_": 20,
+    "$_AOI3_": 2,
+    "$_AOI4_": 3,
+    "$_DFF_PN0_": 5,
+    "$_NAND_": 1,
+    "$_NOR_": 7,
+    "$_NOT_": 2,
+    "$_OAI3_": 4,
+    "$_OAI4_": 8,
+    "$_ORNOT_": 18,
+    "$_OR_": 51
+  },
+  "artifacts": {
+    "netlist_v": "C:\\Users\\Lenovo\\Desktop\\CAD_AI PROJEC\\artifacts\\runs\\run_priority_encoder_f6227214\\priority_encoder_synth.v"
+  },
+  "raw_reports": {
+    "yosys_log": "C:\\Users\\Lenovo\\Desktop\\CAD_AI PROJEC\\artifacts\\runs\\run_priority_encoder_f6227214\\yosys.log",
+    "yosys_err": "C:\\Users\\Lenovo\\Desktop\\CAD_AI PROJEC\\artifacts\\runs\\run_priority_encoder_f6227214\\yosys.err"
+  }
+}

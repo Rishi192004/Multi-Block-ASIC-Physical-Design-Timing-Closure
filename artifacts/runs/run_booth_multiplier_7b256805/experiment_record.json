@@ -1,0 +1,68 @@
+{
+  "run_id": "run_booth_multiplier_7b256805",
+  "design_name": "booth_multiplier",
+  "top_module": "booth_multiplier",
+  "status": "COMPLETED",
+  "rtl_hash": "cf7311ad7ffc746506f4c7ececd2ab6839de8d1136cd1c884e5485ecbf068572",
+  "config_hash": "83ae7d0638feb6c5835b3a5ae2155a5b6f0d3861aa7c18e40e31a8b72ab9e0c0",
+  "tool_versions": {
+    "yosys": "0.9+",
+    "openroad": "2.0+"
+  },
+  "target_pdk": "generic",
+  "clock_period_ns": 12.0,
+  "started_at": "2026-11-17T19:04:44.891362Z",
+  "completed_at": "2026-11-17T19:04:45.713151Z",
+  "total_runtime_s": 0.822,
+  "synthesis_runtime_s": 0.795,
+  "physical_design_runtime_s": 0.0,
+  "failure_stage": null,
+  "error_summary": null,
+  "metrics": {
+    "num_wires": 463.0,
+    "num_wire_bits": 655.0,
+    "num_memories": 0.0,
+    "total_cells": 620.0,
+    "cell_$_ANDNOT_": 28.0,
+    "cell_$_AND_": 7.0,
+    "cell_$_AOI3_": 20.0,
+    "cell_$_AOI4_": 16.0,
+    "cell_$_DFF_PN0_": 90.0,
+    "cell_$_DFF_PN1_": 1.0,
+    "cell_$_MUX_": 202.0,
+    "cell_$_NAND_": 10.0,
+    "cell_$_NOR_": 10.0,
+    "cell_$_NOT_": 65.0,
+    "cell_$_OAI3_": 27.0,
+    "cell_$_OAI4_": 36.0,
+    "cell_$_ORNOT_": 34.0,
+    "cell_$_OR_": 8.0,
+    "cell_$_XNOR_": 19.0,
+    "cell_$_XOR_": 47.0
+  },
+  "cell_statistics": {
+    "$_ANDNOT_": 28,
+    "$_AND_": 7,
+    "$_AOI3_": 20,
+    "$_AOI4_": 16,
+    "$_DFF_PN0_": 90,
+    "$_DFF_PN1_": 1,
+    "$_MUX_": 202,
+    "$_NAND_": 10,
+    "$_NOR_": 10,
+    "$_NOT_": 65,
+    "$_OAI3_": 27,
+    "$_OAI4_": 36,
+    "$_ORNOT_": 34,
+    "$_OR_": 8,
+    "$_XNOR_": 19,
+    "$_XOR_": 47
+  },
+  "artifacts": {
+    "netlist_v": "C:\\Users\\Lenovo\\Desktop\\CAD_AI PROJEC\\artifacts\\runs\\run_booth_multiplier_7b256805\\booth_multiplier_synth.v"
+  },
+  "raw_reports": {
+    "yosys_log": "C:\\Users\\Lenovo\\Desktop\\CAD_AI PROJEC\\artifacts\\runs\\run_booth_multiplier_7b256805\\yosys.log",
+    "yosys_err": "C:\\Users\\Lenovo\\Desktop\\CAD_AI PROJEC\\artifacts\\runs\\run_booth_multiplier_7b256805\\yosys.err"
+  }
+}
