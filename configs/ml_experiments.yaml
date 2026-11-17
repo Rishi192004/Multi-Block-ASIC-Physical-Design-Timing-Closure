@@ -1,0 +1,39 @@
+experiment_tracking:
+  dataset_version: "v1.0"
+  random_seed: 42
+  test_size: 0.2
+  stratify_by: "design_name"
+
+models:
+  timing_regressor:
+    algorithm: "XGBoost"
+    target: "post_route_wns"
+    features:
+      - "num_cells"
+      - "num_sequential_cells"
+      - "combinational_to_sequential_ratio"
+      - "max_fanout"
+      - "avg_fanout"
+      - "logic_depth_max"
+      - "rents_exponent_estimate"
+      - "target_clock_period_ns"
+    hyperparameters:
+      n_estimators: 200
+      max_depth: 6
+      learning_rate: 0.05
+      subsample: 0.8
+      colsample_bytree: 0.8
+
+  power_regressor:
+    algorithm: "LightGBM"
+    target: "total_power_mw"
+    features:
+      - "num_cells"
+      - "num_sequential_cells"
+      - "num_nets"
+      - "target_clock_period_ns"
+      - "core_area_um2"
+    hyperparameters:
+      n_estimators: 150
+      num_leaves: 31
+      learning_rate: 0.05

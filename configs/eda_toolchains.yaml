@@ -1,0 +1,23 @@
+tools:
+  yosys:
+    binary_path: "/usr/bin/yosys"
+    version_command: "yosys -V"
+    default_timeout_s: 1800
+    optimization_levels: ["-O0", "-O1", "-O2", "-O3"]
+  openroad:
+    binary_path: "/usr/bin/openroad"
+    version_command: "openroad -version"
+    default_timeout_s: 3600
+
+pdks:
+  sky130hd:
+    name: "SkyWater 130nm High Density"
+    tech_lef: "/opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
+    std_cell_lef: "/opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef"
+    liberty_file: "/opt/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+    rcx_rules: "/opt/pdks/sky130A/libs.tech/openroad/rcx_patterns.rules"
+  nangate45:
+    name: "NanGate 45nm Open Cell Library"
+    tech_lef: "/opt/pdks/nangate45/lef/nangate45_tech.lef"
+    std_cell_lef: "/opt/pdks/nangate45/lef/nangate45_stdcell.lef"
+    liberty_file: "/opt/pdks/nangate45/lib/nangate45_typical.lib"

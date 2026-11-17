@@ -1,0 +1,20 @@
+environment: development
+debug: true
+
+paths:
+  artifacts_root: "./artifacts"
+  runs_dir: "./artifacts/runs"
+  models_dir: "./artifacts/models"
+  vector_db_dir: "./artifacts/chroma_db"
+
+database:
+  url: "postgresql+asyncpg://eda_user:eda_password@localhost:5432/eda_genius"
+  pool_size: 10
+  max_overflow: 20
+  echo_sql: false
+
+logging:
+  level: "INFO"
+  format: "json"
+  structured: true
+  log_to_file: true
