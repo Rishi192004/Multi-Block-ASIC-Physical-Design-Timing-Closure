@@ -1,0 +1,2800 @@
+[
+  {
+    "design": {
+      "id": "aefa9159-8b18-5896-bda4-40f94e75daab",
+      "name": "alu",
+      "rtl_top_module": "alu"
+    },
+    "run": {
+      "id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+      "design_id": "aefa9159-8b18-5896-bda4-40f94e75daab",
+      "status": "FAILED",
+      "target_pdk": "sky130hd",
+      "clock_period_ns": 5.0,
+      "tool_versions": {
+        "yosys": "0.9+",
+        "openroad": "2.0+"
+      },
+      "run_config": {
+        "top_module": "alu",
+        "rtl_hash": "0d4466e0bb077f3f3677d5358b3f046a01d4d5ef320110768f58ddcc5fbfa35f",
+        "config_hash": "d417d4788422ae3d4f69045f9d1098633103fc5963d2d3486633481741930c16"
+      },
+      "workdir_path": "./artifacts/runs/run_alu_936a4a47",
+      "started_at": "2026-11-17T18:51:54.264511",
+      "completed_at": "2026-11-17T18:51:58.029912",
+      "total_wall_time_s": 3.765
+    },
+    "stages": [
+      {
+        "id": "f1de39d5-2e66-44c5-972d-0dbed4f3b00e",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "stage_name": "SYNTHESIS",
+        "stage_order": 1,
+        "tool_name": "yosys",
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "raw_log_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_alu_936a4a47/yosys.log",
+        "output_artifact_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_alu_936a4a47/alu_synth.v",
+        "runtime_s": 2.583
+      }
+    ],
+    "metrics": [
+      {
+        "id": "f6a766c2-2fa1-4545-9d3d-dbb1e378fafb",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wires",
+        "float_value": 2448.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049802"
+      },
+      {
+        "id": "20e7898d-9bc8-4ea2-9081-f554ffe12a31",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wire_bits",
+        "float_value": 2544.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049813"
+      },
+      {
+        "id": "2c1494e6-8c5e-41b5-ac00-21f266fdc78e",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "GENERAL",
+        "metric_name": "num_memories",
+        "float_value": 0.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049818"
+      },
+      {
+        "id": "8f1e49f8-d5f7-486c-9450-a68cca183115",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "total_cells",
+        "float_value": 1107.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049822"
+      },
+      {
+        "id": "93cf0301-4eca-4b50-a6e9-6c2c7ac5735f",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ANDNOT_",
+        "float_value": 256.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049826"
+      },
+      {
+        "id": "79d45c6d-c46e-41bc-a3c0-440b2dcde33c",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AND_",
+        "float_value": 21.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049831"
+      },
+      {
+        "id": "b7a11a7b-7547-4fce-bf50-83615088b3bd",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AOI3_",
+        "float_value": 115.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049835"
+      },
+      {
+        "id": "cb9c14f3-7f11-4811-8444-13143e68fe78",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AOI4_",
+        "float_value": 91.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049839"
+      },
+      {
+        "id": "f58464e9-b5ff-461b-a0ab-0f233ce6df75",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_MUX_",
+        "float_value": 285.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049844"
+      },
+      {
+        "id": "02ece1fd-d0a2-44f7-ae1a-1480b4da3b57",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NAND_",
+        "float_value": 36.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049848"
+      },
+      {
+        "id": "269c2db0-b7e5-4ae9-adc4-24e4daee4007",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOR_",
+        "float_value": 53.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049853"
+      },
+      {
+        "id": "832822a8-a1c2-4696-a45a-13e6eda2f0ff",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOT_",
+        "float_value": 69.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049857"
+      },
+      {
+        "id": "b4d52c47-ef1b-4395-9132-36bafb336b00",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI3_",
+        "float_value": 85.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049861"
+      },
+      {
+        "id": "cf7d7ecf-8374-42fb-bb91-7acc197bfdfc",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI4_",
+        "float_value": 33.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049865"
+      },
+      {
+        "id": "6f5e8641-f8b9-4c87-a724-8c534463317a",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ORNOT_",
+        "float_value": 55.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049869"
+      },
+      {
+        "id": "68e43074-cc15-4aa3-8513-b16e12f0d888",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OR_",
+        "float_value": 89.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049873"
+      },
+      {
+        "id": "b8967e35-f3a4-4478-8007-4437311290e9",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XNOR_",
+        "float_value": 21.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049878"
+      },
+      {
+        "id": "1db52992-fafb-4851-a335-ef1b86c21e5c",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XOR_",
+        "float_value": 92.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049882"
+      },
+      {
+        "id": "f01c0227-feeb-44bd-9111-5f8a779663c8",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a2111oi_0",
+        "float_value": 7.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049886"
+      },
+      {
+        "id": "be7fe241-cf53-4cf7-9a3b-d7f5e4c6121a",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a211o_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049890"
+      },
+      {
+        "id": "954a78b3-c7cd-4c61-93ca-0cda80f55ad4",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a211oi_1",
+        "float_value": 24.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049894"
+      },
+      {
+        "id": "32e76e2e-2fb5-4a65-bfd8-3b463d1eb280",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21boi_0",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049898"
+      },
+      {
+        "id": "e2e43110-50cc-4332-9a9e-515fbd6478ad",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21o_1",
+        "float_value": 6.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049902"
+      },
+      {
+        "id": "ec82c068-84cf-4955-be6e-bb99c4700357",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21oi_1",
+        "float_value": 119.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049906"
+      },
+      {
+        "id": "f035f499-712c-4fa3-956e-20ce1a740811",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a221o_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049911"
+      },
+      {
+        "id": "37671bb0-00da-4bd7-9a94-37930e250ddc",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a221oi_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049915"
+      },
+      {
+        "id": "de3b1721-83fa-4f4c-b5d7-e1f77baedf97",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a22o_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049919"
+      },
+      {
+        "id": "6c3a6b54-40b8-423b-9fd5-5c54448fbcbe",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a22oi_1",
+        "float_value": 16.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049923"
+      },
+      {
+        "id": "e40c7850-4a2c-45eb-b20e-c05ee2260d95",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a311o_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049928"
+      },
+      {
+        "id": "dc6d0c66-4291-4fb9-9aed-99ceea80d4e6",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a311oi_1",
+        "float_value": 7.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049932"
+      },
+      {
+        "id": "ca4f1712-fe30-4aee-afcf-0618bb1cad76",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a31o_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049936"
+      },
+      {
+        "id": "78b0f452-adeb-4218-ad8a-3827e4a1f8fa",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a31oi_1",
+        "float_value": 14.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049940"
+      },
+      {
+        "id": "00d0db67-54f5-4eeb-b81b-d18bdf0ade1c",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a32o_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049944"
+      },
+      {
+        "id": "a471ed77-ae81-4c1a-b410-1c00d9c62f3f",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a32oi_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049949"
+      },
+      {
+        "id": "fe96e807-6488-439d-b25f-ad323da6dd11",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a41oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049954"
+      },
+      {
+        "id": "421e7d11-a93c-4a5d-aaa4-284977810851",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and2_0",
+        "float_value": 23.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049958"
+      },
+      {
+        "id": "f2bc634e-8cfb-41ae-9c5e-6beb0c395e64",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and3_1",
+        "float_value": 8.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049962"
+      },
+      {
+        "id": "389cd1fe-3af6-424b-9799-b2244d0be65d",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__clkinv_1",
+        "float_value": 24.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049966"
+      },
+      {
+        "id": "518d8ed0-1a2e-4935-916f-7171099635b5",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__lpflow_inputiso1p_1",
+        "float_value": 17.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049970"
+      },
+      {
+        "id": "8e596616-a569-42cc-ad4a-dfc2b54e10ad",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__lpflow_isobufsrc_1",
+        "float_value": 33.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049974"
+      },
+      {
+        "id": "e90bb91e-2b24-4668-98c0-d367c7a7b3a2",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__maj3_1",
+        "float_value": 6.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049978"
+      },
+      {
+        "id": "15d4be65-57cf-406c-99d6-3535a4dce95b",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux2_1",
+        "float_value": 27.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049982"
+      },
+      {
+        "id": "7c867073-3cc6-4ca0-8665-bbcaea008b6f",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux2i_1",
+        "float_value": 59.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049987"
+      },
+      {
+        "id": "817b4018-597c-4497-bf5d-ad4d83a881c7",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux4_2",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049991"
+      },
+      {
+        "id": "a7610dfb-345e-4269-876e-69a6a13af0c7",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand2_1",
+        "float_value": 151.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049995"
+      },
+      {
+        "id": "ccbd717f-8db0-4b33-aad9-c17c6cfd81cb",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand2b_1",
+        "float_value": 30.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.049999"
+      },
+      {
+        "id": "8c7a5479-a7d1-4580-9ddf-0816ec8c5240",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand3_1",
+        "float_value": 14.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050003"
+      },
+      {
+        "id": "e82587b9-3db2-4739-8855-fe6b1f3eeaa6",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand3b_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050008"
+      },
+      {
+        "id": "b69873be-6dc8-4711-9ca1-8d08b80737fd",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand4_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050012"
+      },
+      {
+        "id": "db59cd49-7e4d-40b3-aee0-5f742fc966e3",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand4bb_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050016"
+      },
+      {
+        "id": "c735dd57-d5f3-4a8b-8111-d1e4af46e64c",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor2_1",
+        "float_value": 136.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050020"
+      },
+      {
+        "id": "a73cdbc1-8984-4650-8006-a323383613ff",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor2b_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050024"
+      },
+      {
+        "id": "34d80704-5597-486a-b6cb-6b58c87c1167",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor3_1",
+        "float_value": 28.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050028"
+      },
+      {
+        "id": "0be58d10-c935-4222-8382-8c4130e496d8",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor3b_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050033"
+      },
+      {
+        "id": "a385bafd-7894-4f68-8d78-08c567faf01c",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor4_1",
+        "float_value": 9.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050037"
+      },
+      {
+        "id": "d7dc0eb0-a375-40c9-afcc-732d7afddcb5",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor4b_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050041"
+      },
+      {
+        "id": "d18c21e3-a0af-4a25-92ab-d05225770e42",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o2111a_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050045"
+      },
+      {
+        "id": "3bc9b42a-ca7e-47a1-b2cd-fa097acb4a94",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o2111ai_1",
+        "float_value": 7.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050049"
+      },
+      {
+        "id": "e688f316-dee2-4176-9310-5fd67e12b3cd",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o211a_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050053"
+      },
+      {
+        "id": "ae00cfac-2283-4dc2-9586-aad95800bb12",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o211ai_1",
+        "float_value": 27.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050058"
+      },
+      {
+        "id": "e198647c-2064-43a1-bb17-500625b62e74",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21a_1",
+        "float_value": 8.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050062"
+      },
+      {
+        "id": "ec07d49b-0d3a-4398-bcb7-4ae3be55c20e",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21ai_0",
+        "float_value": 125.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050066"
+      },
+      {
+        "id": "655069fc-fb21-4b74-afba-e4ffc56a4432",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21bai_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050070"
+      },
+      {
+        "id": "96e1004c-9fbc-448b-a93e-b4e4bf9e9cf4",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o221a_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050074"
+      },
+      {
+        "id": "2e3644cc-afe1-45ad-b0fa-95a268c37d0e",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o221ai_1",
+        "float_value": 9.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050078"
+      },
+      {
+        "id": "7a6e42e5-39f5-4fcc-ace3-a21a2eddab68",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o22a_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050083"
+      },
+      {
+        "id": "eb7b4b48-7223-4554-a96a-aaf52bf49a74",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o22ai_1",
+        "float_value": 24.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050087"
+      },
+      {
+        "id": "ade82d63-aa6b-4ea6-90b0-3215b812ba4b",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o2bb2ai_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050091"
+      },
+      {
+        "id": "56f92192-215a-4709-8ca8-6ae3cce23399",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o311a_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050095"
+      },
+      {
+        "id": "c45ffa34-9dc0-4125-8078-7cd0fc4de6fe",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o311ai_0",
+        "float_value": 9.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050099"
+      },
+      {
+        "id": "5d16165e-5d95-4a3d-899c-bbaaa7b203b1",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o31a_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050103"
+      },
+      {
+        "id": "d821aacc-2288-46c0-ad39-f5b5166268e2",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o31ai_1",
+        "float_value": 11.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050129"
+      },
+      {
+        "id": "aa2fd3cd-d6cb-4e8b-beb1-c98522512ec0",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o32ai_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050139"
+      },
+      {
+        "id": "5db0b14f-a244-4103-9860-588d11fb2854",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__or3_1",
+        "float_value": 10.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050144"
+      },
+      {
+        "id": "69f647d2-ea68-4d8a-a64b-8c07af33d094",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__or4_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050149"
+      },
+      {
+        "id": "7d72418f-a3c8-4ef9-983b-891797dd3236",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__or4b_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050153"
+      },
+      {
+        "id": "5a376a66-9b34-4e08-9e16-7be83e17955c",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xnor2_1",
+        "float_value": 25.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050157"
+      },
+      {
+        "id": "8fc4988c-146d-4f27-a733-b7f1728dd278",
+        "run_id": "11786aa7-b42e-5646-9732-6b7de4d1ead4",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xor2_1",
+        "float_value": 25.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:51:58.050163"
+      }
+    ]
+  },
+  {
+    "design": {
+      "id": "1d85ddd8-d85b-5778-9a40-82e135490e9e",
+      "name": "fsm_traffic",
+      "rtl_top_module": "fsm_traffic"
+    },
+    "run": {
+      "id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+      "design_id": "1d85ddd8-d85b-5778-9a40-82e135490e9e",
+      "status": "FAILED",
+      "target_pdk": "sky130hd",
+      "clock_period_ns": 10.0,
+      "tool_versions": {
+        "yosys": "0.9+",
+        "openroad": "2.0+"
+      },
+      "run_config": {
+        "top_module": "fsm_traffic",
+        "rtl_hash": "bcaeddd08a151d1c78243466eb89047a09a4be7022fa0fe407e2b5eb596c4e87",
+        "config_hash": "9080ea1b6678c23c367a6ddef9be49ff629cbc3463b50998ad3693fda6811528"
+      },
+      "workdir_path": "./artifacts/runs/run_fsm_traffic_0b249b8e",
+      "started_at": "2026-11-17T18:51:58.080470",
+      "completed_at": "2026-11-17T18:52:00.503438",
+      "total_wall_time_s": 2.423
+    },
+    "stages": [
+      {
+        "id": "ed13685e-aa15-4584-af4e-1f9d64e0cdca",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "stage_name": "SYNTHESIS",
+        "stage_order": 1,
+        "tool_name": "yosys",
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "raw_log_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_fsm_traffic_0b249b8e/yosys.log",
+        "output_artifact_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_fsm_traffic_0b249b8e/fsm_traffic_synth.v",
+        "runtime_s": 1.53
+      }
+    ],
+    "metrics": [
+      {
+        "id": "298f87fd-2b25-4d13-a890-35c55b93a5e1",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wires",
+        "float_value": 397.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524168"
+      },
+      {
+        "id": "156001d3-7c13-412b-8508-df5d9a133509",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wire_bits",
+        "float_value": 476.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524175"
+      },
+      {
+        "id": "c99d070a-68d9-426d-b8d4-ec220ceb2df6",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "GENERAL",
+        "metric_name": "num_memories",
+        "float_value": 0.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524180"
+      },
+      {
+        "id": "6628b46f-2db2-40c0-8cfb-25d0a70e8be6",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "total_cells",
+        "float_value": 92.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524185"
+      },
+      {
+        "id": "f6b0ad3c-85c5-48c1-9e9b-697c7ba8ebaa",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ANDNOT_",
+        "float_value": 58.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524189"
+      },
+      {
+        "id": "c015d84f-e589-460a-b90f-e1eec87b1de9",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AND_",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524193"
+      },
+      {
+        "id": "7dd6905e-f195-4292-bd55-4d22e55097c3",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AOI3_",
+        "float_value": 10.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524197"
+      },
+      {
+        "id": "95e1f8bb-0268-48ce-b419-ba69c40251c4",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_DFF_PN0_",
+        "float_value": 36.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524202"
+      },
+      {
+        "id": "32c03e22-5f85-4503-bfab-57278ed8d838",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_MUX_",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524206"
+      },
+      {
+        "id": "8bf1d16d-9538-4d72-85ad-200d135a8f96",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NAND_",
+        "float_value": 32.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524210"
+      },
+      {
+        "id": "2c35f9d6-9121-4c81-b058-061d2d72f94c",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOR_",
+        "float_value": 23.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524214"
+      },
+      {
+        "id": "d82d198c-6fb7-4620-a85b-13bf0304147e",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOT_",
+        "float_value": 10.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524218"
+      },
+      {
+        "id": "0d7aa81a-6d89-43ae-84d5-c55dfdbc2a44",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI3_",
+        "float_value": 14.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524223"
+      },
+      {
+        "id": "f01de266-3a3f-4b3b-9bde-3dfa54707653",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI4_",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524227"
+      },
+      {
+        "id": "cf277d92-ae0a-4cee-835d-b4d8a4e29405",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ORNOT_",
+        "float_value": 18.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524231"
+      },
+      {
+        "id": "70335ac2-9604-441f-9a59-8538fc883625",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OR_",
+        "float_value": 98.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524235"
+      },
+      {
+        "id": "e79e9d29-0dbf-436d-8119-11c80d1644db",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XNOR_",
+        "float_value": 10.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524239"
+      },
+      {
+        "id": "f6d7cee2-b819-4b24-903f-13f258feb746",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XOR_",
+        "float_value": 25.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524244"
+      },
+      {
+        "id": "9510ae23-25b6-4640-ab45-6e01d3c9dd09",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a211oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524248"
+      },
+      {
+        "id": "0b9887e8-4e0d-4dde-a929-dc9ef2559354",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524252"
+      },
+      {
+        "id": "7aab7110-5f0f-4c0d-b39d-d952629a34e3",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a2bb2oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524256"
+      },
+      {
+        "id": "2c71e5e3-0682-4852-a446-3bb245bfce6b",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a311oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524260"
+      },
+      {
+        "id": "efd3b136-da48-475f-9611-298f4a61ebd7",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a31oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524264"
+      },
+      {
+        "id": "636022c5-f80f-40d8-b519-11423df31e03",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and2_0",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524268"
+      },
+      {
+        "id": "cb69ec1e-09bb-4d88-b1ed-a3616c4469d6",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and3_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524272"
+      },
+      {
+        "id": "ce8b8e01-c508-4944-9abf-e844def13936",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__clkinv_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524277"
+      },
+      {
+        "id": "26ebe690-a4df-44f6-8022-1a6139327e7f",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__dfrtp_1",
+        "float_value": 36.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524281"
+      },
+      {
+        "id": "98514dcc-1c08-4cb4-9c33-7758d6c59b54",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux2i_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524285"
+      },
+      {
+        "id": "d8858867-1c47-4d87-9f52-5341c22d1686",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand2_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524289"
+      },
+      {
+        "id": "45b3740d-7e12-4d7d-bb28-8dab564ae876",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand2b_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524293"
+      },
+      {
+        "id": "e66e5c49-2a01-4755-82f2-3b0c0572aa37",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand3_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524297"
+      },
+      {
+        "id": "f52d0ac2-cbeb-4bdb-acee-bee3989893bc",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand4_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524301"
+      },
+      {
+        "id": "c384940f-bee4-4cb4-9770-4be6a998bb42",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand4bb_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524305"
+      },
+      {
+        "id": "87f3ad42-f91e-4755-a39b-49a9a6733329",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor2_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524310"
+      },
+      {
+        "id": "499ed166-5758-437e-b752-0013a95f7394",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor3_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524314"
+      },
+      {
+        "id": "2e98dad2-0f88-4ccd-a542-9e125bc8ec1a",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor3b_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524318"
+      },
+      {
+        "id": "1b30d8b6-5fc4-4246-a4a4-9bc8f29c464f",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor4_1",
+        "float_value": 9.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524323"
+      },
+      {
+        "id": "3ccd1387-2954-440d-b963-8b83469914a2",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor4b_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524327"
+      },
+      {
+        "id": "f33d96e9-6bf7-4122-9a15-79fa28900621",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor4bb_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524332"
+      },
+      {
+        "id": "5a1fcdc6-7320-45f1-bff9-28b06e1ed7a8",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21ai_0",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524336"
+      },
+      {
+        "id": "9a7df12d-3b31-4c59-8a37-415069cd6bca",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21bai_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524341"
+      },
+      {
+        "id": "72466a4c-42e4-48f9-b3f4-07f1d4a0c84e",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o22ai_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524346"
+      },
+      {
+        "id": "14af8c5a-80af-4f2a-adf7-137c79ebe370",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o32a_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524351"
+      },
+      {
+        "id": "cb3b8cdf-b2c8-464c-af7b-9142024d68a2",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__or3b_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524355"
+      },
+      {
+        "id": "63305ba7-44ac-4354-96b3-41a3bac54a7c",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__or4_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524359"
+      },
+      {
+        "id": "cf89c4e5-5e89-4e06-9056-9f9eef25cb60",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__or4b_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524363"
+      },
+      {
+        "id": "c8188f31-b55a-4af1-b2c5-4073bbace682",
+        "run_id": "d23c62bd-f8fa-5960-95f2-e77a298aaa6c",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xor2_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:00.524367"
+      }
+    ]
+  },
+  {
+    "design": {
+      "id": "2a4ec776-34d4-5d7c-a19e-40518afc225e",
+      "name": "uart_tx",
+      "rtl_top_module": "uart_tx"
+    },
+    "run": {
+      "id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+      "design_id": "2a4ec776-34d4-5d7c-a19e-40518afc225e",
+      "status": "FAILED",
+      "target_pdk": "sky130hd",
+      "clock_period_ns": 8.0,
+      "tool_versions": {
+        "yosys": "0.9+",
+        "openroad": "2.0+"
+      },
+      "run_config": {
+        "top_module": "uart_tx",
+        "rtl_hash": "9793ca528f5b824dd682a18910e01f859dc295832fb1a85ed8c49fe569683444",
+        "config_hash": "2c5e554cb4854643307dbfb995febce865adf69b0400c7c8f74195fcadce32c3"
+      },
+      "workdir_path": "./artifacts/runs/run_uart_tx_1a371eff",
+      "started_at": "2026-11-17T18:52:00.545513",
+      "completed_at": "2026-11-17T18:52:02.892579",
+      "total_wall_time_s": 2.347
+    },
+    "stages": [
+      {
+        "id": "8d26ad86-39cc-4ada-b7f3-8a0b8910fe12",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "stage_name": "SYNTHESIS",
+        "stage_order": 1,
+        "tool_name": "yosys",
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "raw_log_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_uart_tx_1a371eff/yosys.log",
+        "output_artifact_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_uart_tx_1a371eff/uart_tx_synth.v",
+        "runtime_s": 1.528
+      }
+    ],
+    "metrics": [
+      {
+        "id": "d0ac7a98-515e-44a9-9ea0-b293884ee783",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wires",
+        "float_value": 285.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913473"
+      },
+      {
+        "id": "d86b95a9-c00d-49e9-ad49-5831c3d0571e",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wire_bits",
+        "float_value": 344.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913483"
+      },
+      {
+        "id": "bc37f649-0060-47c6-bc43-cedadc94c502",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "GENERAL",
+        "metric_name": "num_memories",
+        "float_value": 0.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913488"
+      },
+      {
+        "id": "44181396-d95c-4af5-b2bd-723e299aab1c",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "total_cells",
+        "float_value": 113.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913492"
+      },
+      {
+        "id": "5e5a97fe-34a4-47c7-ae83-e39fd21a5892",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ANDNOT_",
+        "float_value": 35.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913497"
+      },
+      {
+        "id": "87db0e43-097f-4801-aada-bb98dd7591a2",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AND_",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913501"
+      },
+      {
+        "id": "3bd44978-2f17-4074-a0d2-c48a433d1598",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AOI3_",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913505"
+      },
+      {
+        "id": "b762e4f5-4851-46b0-9325-e55a56ce4a97",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_DFF_PN0_",
+        "float_value": 32.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913510"
+      },
+      {
+        "id": "d4dbefb1-1957-43eb-8119-ef010f7f6262",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_DFF_PN1_",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913514"
+      },
+      {
+        "id": "a8a4cfec-842d-4568-8b27-12fd3e7d58d6",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_MUX_",
+        "float_value": 47.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913518"
+      },
+      {
+        "id": "005ef0d5-a411-4c95-bccb-f41d95ccda5d",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NAND_",
+        "float_value": 12.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913523"
+      },
+      {
+        "id": "d230577a-226a-47ea-a34b-62c5c609e79c",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOR_",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913527"
+      },
+      {
+        "id": "35c737d4-d789-48bf-b150-94f47130e499",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOT_",
+        "float_value": 7.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913532"
+      },
+      {
+        "id": "27b6adf8-879d-4450-ba6e-912f42b17fb5",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI4_",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913536"
+      },
+      {
+        "id": "c72d050b-845a-4974-8f3d-1a098c19baba",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ORNOT_",
+        "float_value": 9.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913540"
+      },
+      {
+        "id": "6b04a9a4-2c29-44c3-ac3a-bf0eddf5b774",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OR_",
+        "float_value": 39.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913544"
+      },
+      {
+        "id": "42762656-9289-416e-9415-40d4ff0ee4a9",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XNOR_",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913548"
+      },
+      {
+        "id": "a02f115b-7411-4add-9705-5a80601e59ef",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XOR_",
+        "float_value": 15.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913552"
+      },
+      {
+        "id": "b8818a08-d357-4fce-9240-1501bf4365bf",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a211oi_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913556"
+      },
+      {
+        "id": "91c02fd9-2c7f-4c20-ae66-53b9171e7c3a",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21o_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913560"
+      },
+      {
+        "id": "9fe50722-a357-4b22-8e8a-b9fb9f734ecf",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21oi_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913565"
+      },
+      {
+        "id": "edac66d0-6f4c-41ff-9396-3e2cb81446b2",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a22oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913569"
+      },
+      {
+        "id": "626d1bc9-7393-4d26-b18f-c39f2f328f0f",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a31oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913573"
+      },
+      {
+        "id": "cca318b4-8e04-4cc7-b02a-599b94607080",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a32o_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913578"
+      },
+      {
+        "id": "84de4fd9-b524-4ce8-8739-1a2ad315d888",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a41oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913582"
+      },
+      {
+        "id": "05b98990-b1a3-453d-96f2-bc47efda1fb3",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and2_0",
+        "float_value": 12.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913587"
+      },
+      {
+        "id": "a6556dec-2e56-4e95-b5d5-b11f37691ec4",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and3_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913591"
+      },
+      {
+        "id": "396d0480-4d7f-44ed-8cae-5872ff31da99",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and4_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913595"
+      },
+      {
+        "id": "91a07299-49c3-4c4b-844d-a8b6fff09ddc",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__clkinv_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913599"
+      },
+      {
+        "id": "9faac5a7-5b98-4068-a179-1b3e8e6c0328",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__dfrtp_1",
+        "float_value": 32.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913603"
+      },
+      {
+        "id": "69443a18-eb85-4fac-9014-f29bffa7575f",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__dfstp_2",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913607"
+      },
+      {
+        "id": "572b5484-4b53-4031-8851-86d2c5f3d7b7",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__lpflow_inputiso1p_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913611"
+      },
+      {
+        "id": "17c26f09-0bba-4c0d-803d-8117b632dae8",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__lpflow_isobufsrc_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913616"
+      },
+      {
+        "id": "3c6b6f42-a9f4-4bd4-a479-1a171e844fb2",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux2_1",
+        "float_value": 8.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913620"
+      },
+      {
+        "id": "b6e95c40-dec2-4fea-baac-552431170a13",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux2i_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913624"
+      },
+      {
+        "id": "78cbc8be-e61e-4369-ae91-0597d2b8ec33",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux4_2",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913628"
+      },
+      {
+        "id": "3cb68dcb-5d79-41e2-95b0-8a7339b4077b",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand2_1",
+        "float_value": 13.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913633"
+      },
+      {
+        "id": "17d6cd53-0351-4f67-8d26-129a7aa0c11e",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand3_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913637"
+      },
+      {
+        "id": "f7f55c31-fb48-4953-a9f6-0386c6b70227",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor2_1",
+        "float_value": 6.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913641"
+      },
+      {
+        "id": "354b2bb5-d521-4f6a-89e8-972f42ff9875",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor3_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913645"
+      },
+      {
+        "id": "abc5b756-39cd-4cf7-a748-57dfa16a98d9",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor4_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913649"
+      },
+      {
+        "id": "7ba45106-0123-49d3-8ef7-1fe7acb64c1f",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21ai_0",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913654"
+      },
+      {
+        "id": "82a8c638-af81-4024-821e-b8ef555011ef",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o22a_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913658"
+      },
+      {
+        "id": "1ea23792-6c71-42ae-962c-2e5096758608",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o2bb2ai_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913662"
+      },
+      {
+        "id": "2b796244-b004-4271-9981-251158b6e420",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o31ai_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913666"
+      },
+      {
+        "id": "d5435fa8-d1a5-46b3-a008-619db0553eb3",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xnor2_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913671"
+      },
+      {
+        "id": "71384476-c09a-4cb0-81d7-a1f2c4431206",
+        "run_id": "903f9593-0870-5d22-8c11-86dcbd0922fa",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xor2_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:02.913675"
+      }
+    ]
+  },
+  {
+    "design": {
+      "id": "b84fab37-9a70-52f4-a9ab-526c3091702f",
+      "name": "fifo_sync",
+      "rtl_top_module": "fifo_sync"
+    },
+    "run": {
+      "id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+      "design_id": "b84fab37-9a70-52f4-a9ab-526c3091702f",
+      "status": "FAILED",
+      "target_pdk": "sky130hd",
+      "clock_period_ns": 6.0,
+      "tool_versions": {
+        "yosys": "0.9+",
+        "openroad": "2.0+"
+      },
+      "run_config": {
+        "top_module": "fifo_sync",
+        "rtl_hash": "05e13aa627b1d80397a365863030cccce3004821236e88e6c4752c930958825e",
+        "config_hash": "dad9bbc5ad160826f4daee21842bff8305996c2ceb07f02bd20586c9bbc51124"
+      },
+      "workdir_path": "./artifacts/runs/run_fifo_sync_49760c5b",
+      "started_at": "2026-11-17T18:52:02.934322",
+      "completed_at": "2026-11-17T18:52:05.944688",
+      "total_wall_time_s": 3.01
+    },
+    "stages": [
+      {
+        "id": "e8f77e32-3da7-4c8a-b3b3-1513a554fd77",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "stage_name": "SYNTHESIS",
+        "stage_order": 1,
+        "tool_name": "yosys",
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "raw_log_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_fifo_sync_49760c5b/yosys.log",
+        "output_artifact_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_fifo_sync_49760c5b/fifo_sync_synth.v",
+        "runtime_s": 1.88
+      }
+    ],
+    "metrics": [
+      {
+        "id": "3bc182ee-aef4-4d71-b8dd-376254fe4b26",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wires",
+        "float_value": 1433.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965877"
+      },
+      {
+        "id": "ad83faed-a2c2-4dfc-a24d-92bdfa4ca916",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wire_bits",
+        "float_value": 1738.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965886"
+      },
+      {
+        "id": "10c464ab-14ba-4444-bcd9-719c1378bd97",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "GENERAL",
+        "metric_name": "num_memories",
+        "float_value": 0.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965891"
+      },
+      {
+        "id": "8a2ddf20-7ae7-4a21-a968-f6ae46f43d2a",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "total_cells",
+        "float_value": 787.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965895"
+      },
+      {
+        "id": "cc9f31e0-d64a-4443-a83c-12b875e5577b",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ANDNOT_",
+        "float_value": 22.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965899"
+      },
+      {
+        "id": "3d1e280d-27b1-41bd-9dbf-ebe58f13d11a",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AND_",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965904"
+      },
+      {
+        "id": "f5c2e0b5-77d9-47d9-a7be-594d07db1e51",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AOI3_",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965908"
+      },
+      {
+        "id": "d3e3853e-e4a4-496c-8c5c-0b173141f9a7",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_DFF_PN0_",
+        "float_value": 29.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965913"
+      },
+      {
+        "id": "e038627a-9eb9-4856-82e6-4575ee63782e",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_DFF_P_",
+        "float_value": 256.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965917"
+      },
+      {
+        "id": "d7300e8d-71d1-4bfa-a11e-7b222bd1fc8a",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_MUX_",
+        "float_value": 523.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965921"
+      },
+      {
+        "id": "df91421d-8499-4d94-a5b0-16cfae1af4f9",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NAND_",
+        "float_value": 6.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965925"
+      },
+      {
+        "id": "0c46f7cb-5eb7-45db-bfff-8466c4624e74",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOR_",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965930"
+      },
+      {
+        "id": "b6df1854-2d01-4be6-8b67-a3eee53aa33b",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOT_",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965935"
+      },
+      {
+        "id": "bfe2e429-a841-4250-8523-1810a9fb9218",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI3_",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965939"
+      },
+      {
+        "id": "06b70a5b-2e90-48a7-99b0-4ae51cf5f6f5",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI4_",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965945"
+      },
+      {
+        "id": "0d71427d-5f45-41f3-9cb8-529507008a06",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ORNOT_",
+        "float_value": 9.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965949"
+      },
+      {
+        "id": "cc8351b2-0426-454e-835c-2f92ad1d65ee",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OR_",
+        "float_value": 30.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965954"
+      },
+      {
+        "id": "e47aebce-4783-4f16-be6d-eaccb27708e2",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XNOR_",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965959"
+      },
+      {
+        "id": "50b0aa89-4136-4cf1-9d27-036fad1d331d",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XOR_",
+        "float_value": 11.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965963"
+      },
+      {
+        "id": "d4e54f16-c661-45f8-8e64-9ad06ebf28a6",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a2111oi_0",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965968"
+      },
+      {
+        "id": "db3dbfff-b1ac-411b-bd6c-712116f97ef5",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a211o_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965972"
+      },
+      {
+        "id": "ecfff681-44f9-4ba8-933d-5a654035cc9e",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a211oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965976"
+      },
+      {
+        "id": "2b8d625b-6c77-4fa2-bef5-88d08c468a3e",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21boi_0",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965980"
+      },
+      {
+        "id": "6aab2670-a804-4eea-8cc3-436aab303137",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21oi_1",
+        "float_value": 12.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965984"
+      },
+      {
+        "id": "2087888c-080b-49bb-851c-cb3c9e1b5190",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a22oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965988"
+      },
+      {
+        "id": "72cb85e5-0155-4f23-83c5-193e31cdcb58",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a31o_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965993"
+      },
+      {
+        "id": "b3f00e23-1f4e-40b4-a7d2-1291429ed01e",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a31oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.965997"
+      },
+      {
+        "id": "2d876395-f30d-4cfe-aa7d-5e65beb4f5ac",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a32oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966001"
+      },
+      {
+        "id": "6881c299-de23-4c71-8085-ed9bea3188a5",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a41oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966006"
+      },
+      {
+        "id": "e4f83ae7-9e8f-45b5-90dc-7af7fc906864",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and3_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966010"
+      },
+      {
+        "id": "8dd96b38-13bc-45f2-832c-1d4394321a07",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__clkinv_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966014"
+      },
+      {
+        "id": "772a870b-2ff7-45ec-bae4-d988a0fa66be",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__dfrtp_1",
+        "float_value": 29.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966018"
+      },
+      {
+        "id": "d7965160-464b-4cd9-8b21-5f59b2897750",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__dfxtp_1",
+        "float_value": 256.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966022"
+      },
+      {
+        "id": "d113e521-4aea-48ea-86b3-ae9af9b3ae19",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__lpflow_inputiso1p_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966027"
+      },
+      {
+        "id": "b28b134e-b904-4a03-98f5-aedd089e493c",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__lpflow_isobufsrc_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966031"
+      },
+      {
+        "id": "7947f936-8af3-4db8-9c3c-b84c07e141ee",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__maj3_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966036"
+      },
+      {
+        "id": "578fa4a4-1d7b-4952-8796-09b051e8eb49",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux2_1",
+        "float_value": 261.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966040"
+      },
+      {
+        "id": "f154427f-26c9-406a-9e71-a39806267749",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__mux4_2",
+        "float_value": 64.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966044"
+      },
+      {
+        "id": "65923ee5-a3e9-486e-9b9b-ab11ec7fe97e",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand2_1",
+        "float_value": 13.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966048"
+      },
+      {
+        "id": "dd537dc6-d349-46e3-b709-4ffd55b69c5c",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand3_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966053"
+      },
+      {
+        "id": "8d2f358c-3f0c-40ee-b62d-3e253ca63947",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand4_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966057"
+      },
+      {
+        "id": "af431213-a087-4463-9458-cbc2d4e5523c",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor2_1",
+        "float_value": 44.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966061"
+      },
+      {
+        "id": "f4681249-3d8b-4ad3-8a9c-50a8f81d671d",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor2b_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966065"
+      },
+      {
+        "id": "d482214b-99a4-43fb-a429-aa6a1d4dc528",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor3_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966070"
+      },
+      {
+        "id": "9c82e81b-e591-464c-ae3c-e6748378ed3c",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor3b_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966074"
+      },
+      {
+        "id": "6fa63f0a-cc72-4e50-88bc-6d446d41f78c",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor4_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966078"
+      },
+      {
+        "id": "b992fe34-badf-4169-9e11-b8cf2e4c0f17",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor4b_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966083"
+      },
+      {
+        "id": "0a4b7527-7a4e-436c-98c7-41d4573ba7f8",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o2111a_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966087"
+      },
+      {
+        "id": "241c939c-c3ef-4000-b14f-175ef020492c",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o2111ai_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966091"
+      },
+      {
+        "id": "3dca9d1e-bea1-417d-868b-dfd966cd3379",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21a_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966096"
+      },
+      {
+        "id": "50956cab-b200-4e3f-ab36-7c433b60374f",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21ai_0",
+        "float_value": 39.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966100"
+      },
+      {
+        "id": "9e41a85d-a60d-4595-ae62-02471bb9ae0a",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o22a_1",
+        "float_value": 11.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966104"
+      },
+      {
+        "id": "75ef4146-01e4-4942-989d-82333f42ce7f",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o31ai_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966108"
+      },
+      {
+        "id": "b8fe666c-b19e-491a-a614-9f51476fff56",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__or4_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966113"
+      },
+      {
+        "id": "9174af23-4178-49b7-9592-e3fc17749666",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xnor2_1",
+        "float_value": 10.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966117"
+      },
+      {
+        "id": "661a0258-f077-4868-9a18-a0dffec20768",
+        "run_id": "f5d18680-9bda-5828-9880-86aac0a4bd94",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xor2_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:05.966121"
+      }
+    ]
+  },
+  {
+    "design": {
+      "id": "5a18c597-137a-50b8-b754-96282d9bfa1d",
+      "name": "booth_multiplier",
+      "rtl_top_module": "booth_multiplier"
+    },
+    "run": {
+      "id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+      "design_id": "5a18c597-137a-50b8-b754-96282d9bfa1d",
+      "status": "FAILED",
+      "target_pdk": "sky130hd",
+      "clock_period_ns": 12.0,
+      "tool_versions": {
+        "yosys": "0.9+",
+        "openroad": "2.0+"
+      },
+      "run_config": {
+        "top_module": "booth_multiplier",
+        "rtl_hash": "cf7311ad7ffc746506f4c7ececd2ab6839de8d1136cd1c884e5485ecbf068572",
+        "config_hash": "73775132f477107fd897e0aa7a32f3b674f06e777273f910986033a86e46b4dc"
+      },
+      "workdir_path": "./artifacts/runs/run_booth_multiplier_c563579c",
+      "started_at": "2026-11-17T18:52:05.988077",
+      "completed_at": "2026-11-17T18:52:08.539249",
+      "total_wall_time_s": 2.551
+    },
+    "stages": [
+      {
+        "id": "3cbdb8bb-0e3a-4fac-b9fc-ca6a8338c06d",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "stage_name": "SYNTHESIS",
+        "stage_order": 1,
+        "tool_name": "yosys",
+        "status": "COMPLETED",
+        "exit_code": 0,
+        "raw_log_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_booth_multiplier_c563579c/yosys.log",
+        "output_artifact_path": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_booth_multiplier_c563579c/booth_multiplier_synth.v",
+        "runtime_s": 1.628
+      }
+    ],
+    "metrics": [
+      {
+        "id": "7bbcb3fe-23ac-4818-a424-9cf906c108bd",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wires",
+        "float_value": 1004.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559397"
+      },
+      {
+        "id": "a33f3fbc-9d37-48c6-b50e-69f9a74627f7",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "ROUTING",
+        "metric_name": "num_wire_bits",
+        "float_value": 1196.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559405"
+      },
+      {
+        "id": "d6d93f53-c344-472d-981b-c29a482e9565",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "GENERAL",
+        "metric_name": "num_memories",
+        "float_value": 0.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559410"
+      },
+      {
+        "id": "7e24acd1-8922-4509-a7a3-30eafd0c3ff7",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "total_cells",
+        "float_value": 508.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559415"
+      },
+      {
+        "id": "0fc80706-347c-4296-900c-9c5e93836a1c",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ANDNOT_",
+        "float_value": 28.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559421"
+      },
+      {
+        "id": "7accc855-5529-421f-bf38-6943eb1e8e59",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AND_",
+        "float_value": 7.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559426"
+      },
+      {
+        "id": "597758ad-dbcd-45cb-99aa-6dc3a4bad3d6",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AOI3_",
+        "float_value": 20.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559430"
+      },
+      {
+        "id": "f7402095-329b-4c1c-8bf7-7fd917c07115",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_AOI4_",
+        "float_value": 16.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559435"
+      },
+      {
+        "id": "2e6fab07-5196-4b3f-ae89-09a7d43cf315",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_DFF_PN0_",
+        "float_value": 90.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559440"
+      },
+      {
+        "id": "de9392c2-6328-4f6c-bf50-e22899525b74",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_DFF_PN1_",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559444"
+      },
+      {
+        "id": "0f6a4571-b558-457a-a964-e1ed79058bc0",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_MUX_",
+        "float_value": 202.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559449"
+      },
+      {
+        "id": "92ae11d2-21c6-469a-917b-66b0414ce6fc",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NAND_",
+        "float_value": 10.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559454"
+      },
+      {
+        "id": "22c2478e-384f-49ca-b903-4b76ff3943f5",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOR_",
+        "float_value": 10.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559458"
+      },
+      {
+        "id": "1078b233-7bcb-43bd-af12-c0c6dfd93e0f",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_NOT_",
+        "float_value": 65.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559462"
+      },
+      {
+        "id": "58554d0f-4fdb-4306-8804-dcb97d5d77d4",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI3_",
+        "float_value": 27.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559467"
+      },
+      {
+        "id": "1dea0c0e-19f7-40cc-a876-b290550a19fd",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OAI4_",
+        "float_value": 36.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559471"
+      },
+      {
+        "id": "b8e3a688-b71b-4d12-af1f-20fe04eeadab",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_ORNOT_",
+        "float_value": 34.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559476"
+      },
+      {
+        "id": "b7602e3b-84e1-4067-8f08-7a6c13c40081",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_OR_",
+        "float_value": 8.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559480"
+      },
+      {
+        "id": "8c52096f-45c9-4581-a2f7-64d3d7fb3505",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XNOR_",
+        "float_value": 19.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559485"
+      },
+      {
+        "id": "3ab17b30-e685-45d9-a44f-754a4090b871",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_$_XOR_",
+        "float_value": 47.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559489"
+      },
+      {
+        "id": "40f84e32-f7e5-4a0b-b4ca-ea15da45b958",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a211oi_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559494"
+      },
+      {
+        "id": "92df944c-1b54-4a88-ba07-d308349a18ef",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21o_1",
+        "float_value": 7.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559498"
+      },
+      {
+        "id": "b4d0957e-c789-49e8-b4e9-937224cccbbd",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a21oi_1",
+        "float_value": 22.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559503"
+      },
+      {
+        "id": "078be88d-c5cf-435c-befc-871e8ff871a0",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a221o_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559507"
+      },
+      {
+        "id": "5c1de55c-b673-4034-a282-fac3d5ce2f0e",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a221oi_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559512"
+      },
+      {
+        "id": "f6926033-53c5-417e-a9b0-10ded850bf7b",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a222oi_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559516"
+      },
+      {
+        "id": "95adf190-d422-47f2-821b-d57e56826d08",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a22o_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559521"
+      },
+      {
+        "id": "e7acb18d-0fc2-4ed1-ae28-2c94876f9882",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a22oi_1",
+        "float_value": 15.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559525"
+      },
+      {
+        "id": "de575657-daae-4c5a-8ce7-6259e65896f2",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a311o_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559530"
+      },
+      {
+        "id": "bfaa58e8-0158-4a64-b587-3c1c9ba74a37",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a311oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559534"
+      },
+      {
+        "id": "1f33a206-7320-40ff-b59d-99bc0e6ff8e4",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a31o_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559539"
+      },
+      {
+        "id": "f78746c2-56e9-4299-b1f2-a26ecb5966cc",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__a32oi_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559543"
+      },
+      {
+        "id": "d122ca5b-8982-4b30-83fb-c64105ca8fb3",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__and2_0",
+        "float_value": 9.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559548"
+      },
+      {
+        "id": "6c14771b-62d1-4510-84d9-659d67564a16",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__clkinv_1",
+        "float_value": 19.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559552"
+      },
+      {
+        "id": "5d37cc59-4c49-45d3-bb01-dda472bfdf93",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__dfrtp_1",
+        "float_value": 90.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559557"
+      },
+      {
+        "id": "a47ccae5-2d9b-4ef3-81a5-3e7a97bcd4de",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__dfstp_2",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559561"
+      },
+      {
+        "id": "022892b2-59e5-4b02-b2d3-3e9eb6bef3b0",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__lpflow_inputiso1p_1",
+        "float_value": 3.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559566"
+      },
+      {
+        "id": "8bba6d3c-4ff4-4516-95fb-5276ac5f271b",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__lpflow_isobufsrc_1",
+        "float_value": 7.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559570"
+      },
+      {
+        "id": "83683db2-cb97-484d-9c87-d6a0560b2182",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__maj3_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559575"
+      },
+      {
+        "id": "0b5238a7-7ca9-4df6-be14-0937efc71f9b",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand2_1",
+        "float_value": 180.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559579"
+      },
+      {
+        "id": "491335bb-0252-40f4-ae11-7b647981a032",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand2b_1",
+        "float_value": 9.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559584"
+      },
+      {
+        "id": "fbc643ae-7402-4e82-9ac0-32bac650526f",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nand3_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559588"
+      },
+      {
+        "id": "be7a9f57-0c74-4a74-8125-321bde2460ad",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor2_1",
+        "float_value": 30.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559593"
+      },
+      {
+        "id": "77b0c2b5-7a7a-4563-84a9-9cdc287a43b7",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor2b_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559597"
+      },
+      {
+        "id": "236ab80d-199c-4600-96d3-50610a72c66b",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__nor3_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559601"
+      },
+      {
+        "id": "4711c357-f378-4c3e-a1dc-b175fb923830",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o211ai_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559606"
+      },
+      {
+        "id": "cd327f4a-b702-4dfc-8e49-4c73a2a2d6a5",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21a_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559610"
+      },
+      {
+        "id": "bb9b8567-071c-490a-bd8f-118a34426577",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21ai_0",
+        "float_value": 32.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559615"
+      },
+      {
+        "id": "115767e9-6e08-482d-b02d-7cb3c7b1a55c",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o21bai_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559619"
+      },
+      {
+        "id": "d7b22619-7058-47ff-b675-03d67ba42a88",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o221a_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559624"
+      },
+      {
+        "id": "c548449f-efc8-4b26-b88a-4b6e65c1e517",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o221ai_1",
+        "float_value": 4.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559628"
+      },
+      {
+        "id": "b343d1f4-90d5-43be-a216-782fa69133c3",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o22ai_1",
+        "float_value": 5.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559632"
+      },
+      {
+        "id": "d4419c92-85dc-4bdc-9023-063c4b968e14",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o311a_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559637"
+      },
+      {
+        "id": "106f4e5f-80c8-4534-98ca-3da1ae3f5563",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o311ai_0",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559641"
+      },
+      {
+        "id": "f6da0be8-b0d2-4d9e-a875-5df4012cfb02",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o31ai_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559646"
+      },
+      {
+        "id": "c50c67fb-71a3-45a9-922c-2ef81a1b1b68",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o32a_1",
+        "float_value": 2.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559650"
+      },
+      {
+        "id": "d7464e27-8b49-49c4-8b8f-c3505e7ebc35",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__o32ai_1",
+        "float_value": 1.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559655"
+      },
+      {
+        "id": "913e3400-f3ed-4af1-a07a-0800e96d5669",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xnor2_1",
+        "float_value": 19.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559659"
+      },
+      {
+        "id": "8f221e6f-a812-4cb8-bfd3-f14cc4d0a4ad",
+        "run_id": "4d88f09f-23dd-5e4c-9589-07cff0b92686",
+        "metric_category": "CELL_COUNT",
+        "metric_name": "cell_sky130_fd_sc_hd__xor2_1",
+        "float_value": 10.0,
+        "string_value": null,
+        "recorded_at": "2026-11-17T18:52:08.559664"
+      }
+    ]
+  }
+]

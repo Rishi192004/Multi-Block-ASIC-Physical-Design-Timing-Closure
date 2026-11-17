@@ -1,0 +1,115 @@
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING STA-0354] set_input_delay relative to a clock defined on the same port/pin not allowed.
+[WARNING IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.120, 10.880).
+[INFO IFP-0001] Added 20 rows of 121 sites.
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0010] Tentative 0 to set up sections.
+[INFO PPL-0001] Number of slots          278
+[INFO PPL-0002] Number of I/O            15
+[INFO PPL-0003] Number of I/O w/sink     15
+[INFO PPL-0004] Number of I/O w/o sink   0
+[INFO PPL-0005] Slots per section        200
+[INFO PPL-0006] Slots increase factor    0.01
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 622.56 um.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 10120 10880
+[INFO GPL-0005] CoreAreaUxUy: 65780 65280
+[INFO GPL-0006] NumInstances: 92
+[INFO GPL-0007] NumPlaceInstances: 92
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 96
+[INFO GPL-0011] NumPins: 360
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 76125 76125
+[INFO GPL-0014] CoreAreaLxLy: 10120 10880
+[INFO GPL-0015] CoreAreaUxUy: 65780 65280
+[INFO GPL-0016] CoreArea: 3027904000
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 1259958400
+[INFO GPL-0019] Util(%): 41.61
+[INFO GPL-0020] StdInstsArea: 1259958400
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000010 HPWL: 1324540
+[InitialPlace]  Iter: 2 CG residual: 0.00000012 HPWL: 932751
+[InitialPlace]  Iter: 3 CG residual: 0.00000010 HPWL: 932306
+[InitialPlace]  Iter: 4 CG residual: 0.00000010 HPWL: 936043
+[InitialPlace]  Iter: 5 CG residual: 0.00000011 HPWL: 933096
+[INFO GPL-0031] FillerInit: NumGCells: 133
+[INFO GPL-0032] FillerInit: NumGNets: 96
+[INFO GPL-0033] FillerInit: NumGPins: 360
+[INFO GPL-0023] TargetDensity: 0.60
+[INFO GPL-0024] AveragePlaceInstArea: 13695200
+[INFO GPL-0025] IdealBinArea: 22825332
+[INFO GPL-0026] IdealBinCnt: 132
+[INFO GPL-0027] TotalBinArea: 3027904000
+[INFO GPL-0028] BinCnt: 8 8
+[INFO GPL-0029] BinSize: 6958 6800
+[INFO GPL-0030] NumBins: 64
+[NesterovSolve] Iter: 1 overflow: 0.901204 HPWL: 405041
+[NesterovSolve] Iter: 10 overflow: 0.902385 HPWL: 404643
+[NesterovSolve] Iter: 20 overflow: 0.903045 HPWL: 404658
+[NesterovSolve] Iter: 30 overflow: 0.902982 HPWL: 404712
+[NesterovSolve] Iter: 40 overflow: 0.902919 HPWL: 404759
+[NesterovSolve] Iter: 50 overflow: 0.902835 HPWL: 404776
+[NesterovSolve] Iter: 60 overflow: 0.902878 HPWL: 404758
+[NesterovSolve] Iter: 70 overflow: 0.902943 HPWL: 404743
+[NesterovSolve] Iter: 80 overflow: 0.902986 HPWL: 404758
+[NesterovSolve] Iter: 90 overflow: 0.903035 HPWL: 404976
+[NesterovSolve] Iter: 100 overflow: 0.9031 HPWL: 405563
+[NesterovSolve] Iter: 110 overflow: 0.903213 HPWL: 407173
+[NesterovSolve] Iter: 120 overflow: 0.903364 HPWL: 409842
+[NesterovSolve] Iter: 130 overflow: 0.903533 HPWL: 413894
+[NesterovSolve] Iter: 140 overflow: 0.903672 HPWL: 420329
+[NesterovSolve] Iter: 150 overflow: 0.903724 HPWL: 431414
+[NesterovSolve] Iter: 160 overflow: 0.903455 HPWL: 444856
+[NesterovSolve] Iter: 170 overflow: 0.857903 HPWL: 455033
+[NesterovSolve] Iter: 180 overflow: 0.857114 HPWL: 467999
+[NesterovSolve] Iter: 190 overflow: 0.848166 HPWL: 499588
+[NesterovSolve] Iter: 200 overflow: 0.808366 HPWL: 521975
+[NesterovSolve] Iter: 210 overflow: 0.796713 HPWL: 541810
+[NesterovSolve] Iter: 220 overflow: 0.723245 HPWL: 582802
+[NesterovSolve] Iter: 230 overflow: 0.704613 HPWL: 595826
+[NesterovSolve] Iter: 240 overflow: 0.654931 HPWL: 624408
+[NesterovSolve] Iter: 250 overflow: 0.621646 HPWL: 655439
+[NesterovSolve] Iter: 260 overflow: 0.572899 HPWL: 684996
+[NesterovSolve] Iter: 270 overflow: 0.51164 HPWL: 723671
+[NesterovSolve] Iter: 280 overflow: 0.463133 HPWL: 758895
+[NesterovSolve] Iter: 290 overflow: 0.426946 HPWL: 805605
+[NesterovSolve] Iter: 300 overflow: 0.374926 HPWL: 841261
+[NesterovSolve] Iter: 310 overflow: 0.324984 HPWL: 884223
+[NesterovSolve] Iter: 320 overflow: 0.309532 HPWL: 946678
+[NesterovSolve] Iter: 330 overflow: 0.273115 HPWL: 956686
+[NesterovSolve] Iter: 340 overflow: 0.244046 HPWL: 981058
+[NesterovSolve] Iter: 350 overflow: 0.193219 HPWL: 989167
+[NesterovSolve] Iter: 360 overflow: 0.156112 HPWL: 1008858
+[NesterovSolve] Iter: 370 overflow: 0.126676 HPWL: 1020429
+[NesterovSolve] Iter: 380 overflow: 0.10711 HPWL: 1030657
+[NesterovSolve] Finished with Overflow: 0.099434
+[WARNING DPL-0011] Could not find power special net.
+Placement Analysis
+---------------------------------
+total displacement        278.6 u
+average displacement        3.0 u
+max displacement            8.9 u
+original HPWL            1035.7 u
+legalized HPWL           1279.2 u
+delta HPWL                   24 %
+
+Error: flow.tcl, 26 wrong # args: should be "report_design_area"

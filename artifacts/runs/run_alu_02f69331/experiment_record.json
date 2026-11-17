@@ -1,0 +1,64 @@
+{
+  "run_id": "run_alu_02f69331",
+  "design_name": "alu",
+  "top_module": "alu",
+  "status": "COMPLETED",
+  "rtl_hash": "0d4466e0bb077f3f3677d5358b3f046a01d4d5ef320110768f58ddcc5fbfa35f",
+  "config_hash": "3ff5ce35f3b465875ef2e9943fcfd1316df598e6f98a4aab298fb80735ccd60f",
+  "tool_versions": {
+    "yosys": "0.9+",
+    "openroad": "2.0+"
+  },
+  "target_pdk": "generic",
+  "clock_period_ns": 5.0,
+  "started_at": "2026-11-17T18:19:39.126785",
+  "completed_at": "2026-11-17T18:19:41.986545",
+  "total_runtime_s": 2.86,
+  "synthesis_runtime_s": 2.64,
+  "physical_design_runtime_s": 0.0,
+  "failure_stage": null,
+  "error_summary": null,
+  "metrics": {
+    "num_wires": 1273.0,
+    "num_wire_bits": 1369.0,
+    "num_memories": 0.0,
+    "total_cells": 1301.0,
+    "cell_$_ANDNOT_": 256.0,
+    "cell_$_AND_": 21.0,
+    "cell_$_AOI3_": 115.0,
+    "cell_$_AOI4_": 91.0,
+    "cell_$_MUX_": 285.0,
+    "cell_$_NAND_": 36.0,
+    "cell_$_NOR_": 53.0,
+    "cell_$_NOT_": 69.0,
+    "cell_$_OAI3_": 85.0,
+    "cell_$_OAI4_": 33.0,
+    "cell_$_ORNOT_": 55.0,
+    "cell_$_OR_": 89.0,
+    "cell_$_XNOR_": 21.0,
+    "cell_$_XOR_": 92.0
+  },
+  "cell_statistics": {
+    "$_ANDNOT_": 256,
+    "$_AND_": 21,
+    "$_AOI3_": 115,
+    "$_AOI4_": 91,
+    "$_MUX_": 285,
+    "$_NAND_": 36,
+    "$_NOR_": 53,
+    "$_NOT_": 69,
+    "$_OAI3_": 85,
+    "$_OAI4_": 33,
+    "$_ORNOT_": 55,
+    "$_OR_": 89,
+    "$_XNOR_": 21,
+    "$_XOR_": 92
+  },
+  "artifacts": {
+    "netlist_v": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_alu_02f69331/alu_synth.v"
+  },
+  "raw_reports": {
+    "yosys_log": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_alu_02f69331/yosys.log",
+    "yosys_err": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_alu_02f69331/yosys.err"
+  }
+}

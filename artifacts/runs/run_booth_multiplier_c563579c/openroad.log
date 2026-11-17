@@ -1,0 +1,115 @@
+OpenROAD f12e2f474102bfb875eeee57fb610d7d7de17770 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /opt/eda_env/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING STA-0354] set_input_delay relative to a clock defined on the same port/pin not allowed.
+[WARNING IFP-0028] Core area lower left (10.000, 10.000) snapped to (10.120, 10.880).
+[INFO IFP-0001] Added 38 rows of 228 sites.
+Found 0 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0010] Tentative 0 to set up sections.
+[INFO PPL-0001] Number of slots          458
+[INFO PPL-0002] Number of I/O            69
+[INFO PPL-0003] Number of I/O w/sink     69
+[INFO PPL-0004] Number of I/O w/o sink   0
+[INFO PPL-0005] Slots per section        200
+[INFO PPL-0006] Slots increase factor    0.01
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 5422.89 um.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 10120 10880
+[INFO GPL-0005] CoreAreaUxUy: 115000 114240
+[INFO GPL-0006] NumInstances: 508
+[INFO GPL-0007] NumPlaceInstances: 508
+[INFO GPL-0008] NumFixedInstances: 0
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 543
+[INFO GPL-0011] NumPins: 1874
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 125450 125450
+[INFO GPL-0014] CoreAreaLxLy: 10120 10880
+[INFO GPL-0015] CoreAreaUxUy: 115000 114240
+[INFO GPL-0016] CoreArea: 10840396800
+[INFO GPL-0017] NonPlaceInstsArea: 0
+[INFO GPL-0018] PlaceInstsArea: 4448016000
+[INFO GPL-0019] Util(%): 41.03
+[INFO GPL-0020] StdInstsArea: 4448016000
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.00000010 HPWL: 7966640
+[InitialPlace]  Iter: 2 CG residual: 0.00000009 HPWL: 5053419
+[InitialPlace]  Iter: 3 CG residual: 0.00000011 HPWL: 5038688
+[InitialPlace]  Iter: 4 CG residual: 0.00000011 HPWL: 5048883
+[InitialPlace]  Iter: 5 CG residual: 0.00000011 HPWL: 5047349
+[INFO GPL-0031] FillerInit: NumGCells: 761
+[INFO GPL-0032] FillerInit: NumGNets: 543
+[INFO GPL-0033] FillerInit: NumGPins: 1874
+[INFO GPL-0023] TargetDensity: 0.60
+[INFO GPL-0024] AveragePlaceInstArea: 8755937
+[INFO GPL-0025] IdealBinArea: 14593228
+[INFO GPL-0026] IdealBinCnt: 742
+[INFO GPL-0027] TotalBinArea: 10840396800
+[INFO GPL-0028] BinCnt: 16 16
+[INFO GPL-0029] BinSize: 6555 6460
+[INFO GPL-0030] NumBins: 256
+[NesterovSolve] Iter: 1 overflow: 0.940588 HPWL: 2998152
+[NesterovSolve] Iter: 10 overflow: 0.915721 HPWL: 3151056
+[NesterovSolve] Iter: 20 overflow: 0.91683 HPWL: 3148823
+[NesterovSolve] Iter: 30 overflow: 0.916582 HPWL: 3148566
+[NesterovSolve] Iter: 40 overflow: 0.916635 HPWL: 3148528
+[NesterovSolve] Iter: 50 overflow: 0.91662 HPWL: 3148646
+[NesterovSolve] Iter: 60 overflow: 0.916608 HPWL: 3148717
+[NesterovSolve] Iter: 70 overflow: 0.916578 HPWL: 3148992
+[NesterovSolve] Iter: 80 overflow: 0.91655 HPWL: 3149369
+[NesterovSolve] Iter: 90 overflow: 0.916489 HPWL: 3150312
+[NesterovSolve] Iter: 100 overflow: 0.916391 HPWL: 3152410
+[NesterovSolve] Iter: 110 overflow: 0.916279 HPWL: 3158750
+[NesterovSolve] Iter: 120 overflow: 0.916131 HPWL: 3173418
+[NesterovSolve] Iter: 130 overflow: 0.915881 HPWL: 3202045
+[NesterovSolve] Iter: 140 overflow: 0.915374 HPWL: 3250377
+[NesterovSolve] Iter: 150 overflow: 0.914585 HPWL: 3324220
+[NesterovSolve] Iter: 160 overflow: 0.911259 HPWL: 3433829
+[NesterovSolve] Iter: 170 overflow: 0.894274 HPWL: 3576259
+[NesterovSolve] Iter: 180 overflow: 0.890719 HPWL: 3761760
+[NesterovSolve] Iter: 190 overflow: 0.865924 HPWL: 4010946
+[NesterovSolve] Iter: 200 overflow: 0.844259 HPWL: 4298614
+[NesterovSolve] Iter: 210 overflow: 0.818555 HPWL: 4571468
+[NesterovSolve] Iter: 220 overflow: 0.789826 HPWL: 4882980
+[NesterovSolve] Iter: 230 overflow: 0.749646 HPWL: 5227413
+[NesterovSolve] Iter: 240 overflow: 0.704413 HPWL: 5550765
+[NesterovSolve] Iter: 250 overflow: 0.661001 HPWL: 5867289
+[NesterovSolve] Iter: 260 overflow: 0.61541 HPWL: 6230850
+[NesterovSolve] Iter: 270 overflow: 0.562213 HPWL: 6540769
+[NesterovSolve] Iter: 280 overflow: 0.512615 HPWL: 6839787
+[NesterovSolve] Iter: 290 overflow: 0.459527 HPWL: 7190450
+[NesterovSolve] Iter: 300 overflow: 0.404888 HPWL: 7390916
+[NesterovSolve] Iter: 310 overflow: 0.349761 HPWL: 7573632
+[NesterovSolve] Iter: 320 overflow: 0.302167 HPWL: 7681708
+[NesterovSolve] Iter: 330 overflow: 0.266549 HPWL: 7788764
+[NesterovSolve] Iter: 340 overflow: 0.236308 HPWL: 7930932
+[NesterovSolve] Iter: 350 overflow: 0.200032 HPWL: 7959914
+[NesterovSolve] Iter: 360 overflow: 0.165973 HPWL: 8045041
+[NesterovSolve] Iter: 370 overflow: 0.134691 HPWL: 8108925
+[NesterovSolve] Iter: 380 overflow: 0.118348 HPWL: 8167805
+[NesterovSolve] Finished with Overflow: 0.099073
+[WARNING DPL-0011] Could not find power special net.
+Placement Analysis
+---------------------------------
+total displacement       1321.2 u
+average displacement        2.6 u
+max displacement            7.9 u
+original HPWL            8173.5 u
+legalized HPWL           9522.4 u
+delta HPWL                   17 %
+
+Error: flow.tcl, 26 wrong # args: should be "report_design_area"

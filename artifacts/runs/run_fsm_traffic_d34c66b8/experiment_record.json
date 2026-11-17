@@ -1,0 +1,64 @@
+{
+  "run_id": "run_fsm_traffic_d34c66b8",
+  "design_name": "fsm_traffic",
+  "top_module": "fsm_traffic",
+  "status": "COMPLETED",
+  "rtl_hash": "bcaeddd08a151d1c78243466eb89047a09a4be7022fa0fe407e2b5eb596c4e87",
+  "config_hash": "d4efb7983a7dec512ea3ae35699fec4360c6cce7b36213090852e7d72b48971c",
+  "tool_versions": {
+    "yosys": "0.9+",
+    "openroad": "2.0+"
+  },
+  "target_pdk": "generic",
+  "clock_period_ns": 10.0,
+  "started_at": "2026-11-17T18:49:20.860303",
+  "completed_at": "2026-11-17T18:49:21.571577",
+  "total_runtime_s": 0.711,
+  "synthesis_runtime_s": 0.575,
+  "physical_design_runtime_s": 0.0,
+  "failure_stage": null,
+  "error_summary": null,
+  "metrics": {
+    "num_wires": 276.0,
+    "num_wire_bits": 355.0,
+    "num_memories": 0.0,
+    "total_cells": 342.0,
+    "cell_$_ANDNOT_": 58.0,
+    "cell_$_AND_": 3.0,
+    "cell_$_AOI3_": 10.0,
+    "cell_$_DFF_PN0_": 36.0,
+    "cell_$_MUX_": 3.0,
+    "cell_$_NAND_": 32.0,
+    "cell_$_NOR_": 23.0,
+    "cell_$_NOT_": 10.0,
+    "cell_$_OAI3_": 14.0,
+    "cell_$_OAI4_": 2.0,
+    "cell_$_ORNOT_": 18.0,
+    "cell_$_OR_": 98.0,
+    "cell_$_XNOR_": 10.0,
+    "cell_$_XOR_": 25.0
+  },
+  "cell_statistics": {
+    "$_ANDNOT_": 58,
+    "$_AND_": 3,
+    "$_AOI3_": 10,
+    "$_DFF_PN0_": 36,
+    "$_MUX_": 3,
+    "$_NAND_": 32,
+    "$_NOR_": 23,
+    "$_NOT_": 10,
+    "$_OAI3_": 14,
+    "$_OAI4_": 2,
+    "$_ORNOT_": 18,
+    "$_OR_": 98,
+    "$_XNOR_": 10,
+    "$_XOR_": 25
+  },
+  "artifacts": {
+    "netlist_v": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_fsm_traffic_d34c66b8/fsm_traffic_synth.v"
+  },
+  "raw_reports": {
+    "yosys_log": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_fsm_traffic_d34c66b8/yosys.log",
+    "yosys_err": "/mnt/c/Users/Lenovo/Desktop/CAD_AI PROJEC/artifacts/runs/run_fsm_traffic_d34c66b8/yosys.err"
+  }
+}

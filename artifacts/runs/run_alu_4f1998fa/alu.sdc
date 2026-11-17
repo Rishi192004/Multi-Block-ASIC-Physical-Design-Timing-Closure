@@ -1,0 +1,5 @@
+create_clock -name core_clock -period 5.0 [get_ports clk]
+set_clock_uncertainty 0.25 [get_clocks core_clock]
+set_clock_transition 0.15 [get_clocks core_clock]
+set_input_delay -clock core_clock [expr {5.0} * 0.2] [all_inputs -no_clocks]
+set_output_delay -clock core_clock [expr {5.0} * 0.2] [all_outputs]
